@@ -1,28 +1,24 @@
-from config.settings import settings
-from log.logger_utils import Logger
+import logging
+from utils.parse_answer import parse_dataset_answer, parse_llm_answer
 
-logger = Logger().get_logger()
+# 配置日志
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
-
-def validate_response(filled_template, true_answer, dataset_type):
-    """
-    验证LLM返回的结果是否正确
-    :param filled_template: LLM填充后的模板
-    :param true_answer: 真实答案
-    :param dataset_type: 数据集类型
-    :return: 验证结果（True 或 False）
-    """
-    try:
-        # 解析LLM答案
-        from parse_answer import parse_llm_answer
-        predicted_answer = parse_llm_answer(filled_template)
-
-        # 解析真实答案
-        from parse_answer import parse_dataset_answer
-        parsed_true_answer = parse_dataset_answer(true_answer, dataset_type)
-
-        # 简单示例：直接比较答案
-        return predicted_answer == parsed_true_answer
-    except Exception as e:
-        logger.error(f"Validation failed: {str(e)}")
-        return False
+def validate_response(model_output: str, expected: str, dataset_type: str) -> bool:
+    parse_func = {
+        'clutrr': lambda: parse_llm_answer(model_output) == parse_dataset_answer(expected, dataset_type='clutrr'),
+        'bbh': lambda: parse_llm_answer(model_output) == parse_dataset_answer(expected, dataset_type='bbh'),
+        'mmlu': lambda: parse_llm_answer(model_output) == parse_dataset_answer(expected, dataset_type='mmlu'),
+        'svamp': lambda: parse_llm_answer(model_output) == parse_dataset_answer(expected, dataset_type='svamp'),
+        'aqua': lambda: parse_llm_answer(model_output) == parse_dataset_answer(expected, dataset_type='aqua'),
+        'multiarith': lambda: parse_llm_answer(model_output) == parse_dataset_answer(expected, dataset_type='multiarith'),
+        'date': lambda: parse_llm_answer(model_output) == parse_dataset_answer(expected, dataset_type='date'),
+        'asdiv': lambda: parse_llm_answer(model_output) == parse_dataset_answer(expected, dataset_type='asdiv'),
+        'gsm8k': lambda: parse_llm_answer(model_output) == parse_dataset_answer(expected, dataset_type='gsm8k'),
+        'math': lambda: parse_llm_answer(model_output) == parse_dataset_answer(expected, dataset_type='math')
+    }
+    llm_answer = parse_llm_answer(model_output)
+    dataset_answer = parse_dataset_answer(expected, dataset_type=dataset_type)
+    logger.info(f"Parsed LLM answer: {llm_answer}, Parsed dataset answer: {dataset_answer}")
+    return parse_func.get(dataset_type, lambda: False)()

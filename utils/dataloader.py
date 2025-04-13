@@ -1,4 +1,3 @@
-# filePath: dataloader.py
 from interfaces import DatasetLoaderInterface
 import json
 from pathlib import Path
@@ -53,13 +52,21 @@ class DatasetLoader(DatasetLoaderInterface):
         return dataset
 
     def load_dataset(self, file_path: str, dataset_type: str) -> list:
-        loader_path = self.loader_mapping.get(dataset_type)
-        if loader_path:
-            parts = loader_path.split('.')
-            module_name = '.'.join(parts[:-1])
-            function_name = parts[-1]
-            module = __import__(module_name, fromlist=[function_name])
-            loader = getattr(module, function_name)
-            return loader(file_path)  # 移除 self 参数
+        # 确保键大小写一致
+        loader_function = {
+            'math': self.load_math_bbh_mmlu,
+            'bbh': self.load_math_bbh_mmlu,
+            'mmlu': self.load_math_bbh_mmlu,
+            'gsm8k': self.load_other_datasets,
+            'clutrr': self.load_other_datasets,
+            'svamp': self.load_other_datasets,
+            'aqua': self.load_other_datasets,
+            'multiarith': self.load_other_datasets,
+            'date': self.load_other_datasets,
+            'asdiv': self.load_other_datasets
+        }
+        loader = loader_function.get(dataset_type.lower())
+        if loader:
+            return loader(file_path)
         logger.error(f"Unsupported dataset type: {dataset_type}")
         return []

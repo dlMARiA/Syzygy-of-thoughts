@@ -1,7 +1,7 @@
 openai:
-  api_key: sk-fbPmTxlyQsQhHRrQPuaCACScFQtEql3NOh8cYzK9ndLoTcfD
+  api_key: 'sk-fbPmTxlyQsQhHRrQPuaCACScFQtEql3NOh8cYzK9ndLoTcfD'
   model_name: gpt-4o-mini
-  base_url: https://api.openai.com/v1
+  base_url: https://api.nuwaapi.com/v1
   max_tokens: 2048
   max_retries: 3
   temperature: 0
@@ -9,45 +9,38 @@ runner:
   default_dataset: D:\pycharmcode\langchian_new\datasets\gsm8k\test.jsonl
   default_dataset_type: gsm8k
   default_method: sot
-  default_betti_number: 8
-  default_solution_number: 1
+  default_betti_number: 10
+  default_solution_number: 5
 dataset_loader_mapping:
   math: utils.dataloader.load_math_bbh_mmlu
   bbh: utils.dataloader.load_math_bbh_mmlu
-  MMLU: utils.dataloader.load_math_bbh_mmlu
+  mmlu: utils.dataloader.load_math_bbh_mmlu
   gsm8k: utils.dataloader.load_other_datasets
-  OB: utils.dataloader.load_other_datasets
   CLUTRR: utils.dataloader.load_other_datasets
   SVAMP: utils.dataloader.load_other_datasets
   AQUA: utils.dataloader.load_other_datasets
   MultiArith: utils.dataloader.load_other_datasets
-  data: utils.dataloader.load_other_datasets
-  sport: utils.dataloader.load_other_datasets
-  strangeQA: utils.dataloader.load_other_datasets
+  date: utils.dataloader.load_other_datasets
   ASDiv: utils.dataloader.load_other_datasets
 prompt_template_mapping:
   bbh: utils.get_prompt_template.get_sot_bbh_template
   gsm8k: utils.get_prompt_template.get_sot_gsm8k_template
   CLUTRR: utils.get_prompt_template.get_sot_CLUTRR_template
-  sport: utils.get_prompt_template.get_sot_sport_template
-  strangeqa: utils.get_prompt_template.get_sot_strangeqa_template
-  data: utils.get_prompt_template.get_sot_data_template
+  date: utils.get_prompt_template.get_sot_data_template
   ASDiv: utils.get_prompt_template.get_sot_ASDiv_template
   mmlu: utils.get_prompt_template.get_sot_mmlu_template
   AQUA: utils.get_prompt_template.get_sot_AQUA_template
   SVAMP: utils.get_prompt_template.get_sot_SVAMP_template
+  sport: utils.get_prompt_template.get_sot_sport_template
+  strangeqa: utils.get_prompt_template.get_sot_strangeqa_template
 answer_parser_mapping:
-  gpqa: utils.parse_factory.GPQAParser
   math: utils.parse_factory.MathParser
   gsm8k: utils.parse_factory.GSM8KParser
-  OB: utils.parse_factory.OBParser
   CLUTRR: utils.parse_factory.CLUTRRParser
   bbh: utils.parse_factory.BBHParser
   MMLU: utils.parse_factory.MMLUParser
   SVAMP: utils.parse_factory.SVAMPParser
   AQUA: utils.parse_factory.AQUAParser
   MultiArith: utils.parse_factory.MultiArithParser
-  data: utils.parse_factory.DataParser
-  sport: utils.parse_factory.SportParser
-  strangeQA: utils.parse_factory.StrangeQAParser
+  date: utils.parse_factory.DataParser
   ASDiv: utils.parse_factory.ASDivParser

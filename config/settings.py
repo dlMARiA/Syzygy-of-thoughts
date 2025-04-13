@@ -15,13 +15,14 @@ class Settings:
     MAX_RETRIES = config['openai']['max_retries']
     TEMPERATURE = None
     RUNNER_DEFAULT_DATASET = config['runner']['default_dataset']
-    RUNNER_DEFAULT_DATASET_TYPE = config['runner']['default_dataset_type']
+    # 将默认数据集类型转换为小写
+    RUNNER_DEFAULT_DATASET_TYPE = config['runner']['default_dataset_type'].lower()
     RUNNER_DEFAULT_METHOD = config['runner']['default_method']
     RUNNER_DEFAULT_BETTI_NUMBER = config['runner']['default_betti_number']
     RUNNER_DEFAULT_SOLUTION_NUMBER = config['runner']['default_solution_number']
-    DATASET_LOADER_MAPPING = config.get('dataset_loader_mapping', {})
-    PROMPT_TEMPLATE_MAPPING = config.get('prompt_template_mapping', {})
-    ANSWER_PARSER_MAPPING = config.get('answer_parser_mapping', {})
+    DATASET_LOADER_MAPPING = {k.lower(): v for k, v in config.get('dataset_loader_mapping', {}).items()}
+    PROMPT_TEMPLATE_MAPPING = {k.lower(): v for k, v in config.get('prompt_template_mapping', {}).items()}
+    ANSWER_PARSER_MAPPING = {k.lower(): v for k, v in config.get('answer_parser_mapping', {}).items()}
 
     @classmethod
     def dynamic_max_tokens(cls, question: str) -> int:
