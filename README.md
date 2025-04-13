@@ -8,14 +8,63 @@
 本项目为论文《Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution》的代码实现。该论文提出了一种新颖的推理框架 Syzygy of Thoughts (SoT)，通过将交换代数与同调代数中的 最小自由分解 (Minimal Free Resolution, MFR) 原理融入思维链 (Chain of Thought, CoT)，显著提升大型语言模型 (LLM) 在复杂推理任务中的性能。SoT 针对传统 CoT 在高维、非线性推理中的局限，引入模块、自由性、映射、精确性、最小性和 Betti 数等结构化分解策略，将复杂问题转化为紧凑且逻辑自洽的推理单元。
 实验在 GSM8K 和 MATH 等数据集上进行，涵盖 GPT-4o-mini、Qwen2.5 等模型，SoT 的推理准确率达到或超越主流 CoT 标准（例如，GSM8K 96.0%，MATH 79.1%），且在高温条件下保持稳定性，推理时间更具可扩展性。
 
+
 <div align='left'>
 <img src="assets/main.png" alt="teaser" width="800" />
 </div>
 
 
-## Highlights
-- *
-- *
+## Highlight## 
+
+本项目实现了《Syzygy of Thoughts》论文中的 SoT 推理框架，包含数据集、模型配置、源代码和实验结果。以下是项目目录结构：
+
+```plaintext
+SoT-Paper-Code/
+├── **data/**                     # 数据集存放目录
+│   ├── gsm8k/                    # GSM8K 数学推理数据集
+│   ├── math/                     # MATH 高级数学数据集
+│   ├── svamp/                    # SVAMP 数学推理数据集
+│   └── others/                   # 其他数据集（MultiArith、ASDiv、AQUA 等）
+├── **models/**                   # 模型配置文件目录
+│   ├── gpt4o_mini/               # GPT-4o-mini 模型配置
+│   ├── qwen2.5/                  # Qwen2.5 系列模型配置
+│   └── gemma/                    # Gemma 模型配置
+├── **src/**                      # 源代码目录
+│   ├── **sot.py**                # SoT 推理框架核心实现
+│   ├── cot.py                    # CoT 基线推理实现
+│   ├── cot_sc.py                 # CoT-SC (n=5) 推理实现
+│   ├── mfr_utils.py              # 最小自由分解工具函数
+│   └── evaluate.py               # 性能评估脚本
+├── **experiments/**              # 实验结果与可视化
+│   ├── figures/                  # 实验图表（折线图、箱型图等）
+│   └── logs/                     # 实验运行日志
+├── **requirements.txt**          # 项目依赖环境配置
+├── **README.md**                 # 项目说明文档
+└── run.sh                        # 一键运行脚本s
+SoT-Paper-Code/
+├── data/                     # 数据集文件
+│   ├── gsm8k/                # GSM8K 数据集
+│   ├── math/                 # MATH 数据集
+│   ├── svamp/                # SVAMP 数据集
+│   └── others/               # 其他数据集（MultiArith, ASDiv, AQUA 等）
+├── models/                   # 模型配置文件
+│   ├── gpt4o_mini/           # GPT-4o-mini 配置
+│   ├── qwen2.5/              # Qwen2.5 配置
+│   └── gemma/                # Gemma 模型配置
+├── src/                      # 源代码
+│   ├── sot.py                # SoT 推理框架实现
+│   ├── cot.py                # CoT 基线实现
+│   ├── cot_sc.py             # CoT-SC (n=5) 实现
+│   ├── mfr_utils.py          # MFR 工具函数
+│   └── evaluate.py           # 评估脚本
+├── experiments/              # 实验结果与可视化
+│   ├── figures/              # 图表（折线图、箱型图）
+│   └── logs/                 # 实验日志
+├── requirements.txt          # 依赖环境
+├── README.md                 # 项目说明
+└── run.sh                    # 运行脚本
+```
+
 
 
 ## Overview
@@ -30,24 +79,18 @@
 
 ## Schedule
 介绍xxxxxx:
-
-- [x] Release model code of PTv3;
-- [x] Release scratched config and record of indoor semantic segmentation;
-  - [x] ScanNet
-  - [x] ScanNet200
-  - [x] S3DIS
-  - [x] S3DIS 6-Fold (with cross-validation script) 
+- [x] xxx
+- [x] xxx
+  - [x] xxx
+  - [x] xxx
+  - [x] xxx
 
 
 ## Citation
-If you find Syzygy-of-thoughts useful to your research, please cite our work as an acknowledgment. (*^▽^*)
-bib
-@article{zhang2023faster,
-  title={Faster segment anything: Towards lightweight sam for mobile applications},
-  author={Zhang, Chaoning and Han, Dongshen and Qiao, Yu and Kim, Jung Uk and Bae, Sung-Ho and Lee, Seungkyu and Hong, Choong Seon},
-  journal={arXiv preprint arXiv:2306.14289},
-  year={2023}
-}
+If you find SoT useful to your research, please cite our work as an acknowledgment.(*^▽^*)
+```bib
+
+```
 
 
 ## Installation
@@ -57,7 +100,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 Before using the Syzygy-of-thoughts (SoT) framework, you need to set up your API key and URL:
 
-1. Create an `apikey.py` file in the project root directory with the following format:
+1. Create an `Syzygy-of-thoughts/config/sot.yaml` file in the project root directory with the following format:
 
 ```
 url = "https://api.openai.com/v1"  # Replace with your API endpoint
@@ -73,7 +116,7 @@ api_key = [
 
 - **ChatGPT**: [注册并获取 API Key](https://platform.openai.com/signup)
 - **Qwen (通义千问)**: [登录并获取 API Key](https://bailian.console.aliyun.com/?tab=model#/api-key)
-- **Gemma**: [创建账户并获取 API Token](https://www.netmind.ai/user/apiToken)
+- **Gemma**: [创建账户并获取 API Key](https://www.netmind.ai/user/apiToken)
 
 获取 API Key 后，您可以将其配置到项目中以启用相关功能。
 
@@ -88,31 +131,7 @@ api_key = [
 - PyTorch: 
 
 ### Environment
-
-- Base environment
-bash
 # 改成我们自己的
-conda create -n pointcept python=3.8 -y
-conda activate pointcept
-conda install ninja -y
-conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=11.8 -c pytorch -c nvidia
-conda install h5py pyyaml -c anaconda -y
-conda install sharedarray tensorboard tensorboardx yapf addict einops scipy plyfile termcolor timm -c conda-forge -y
-conda install pytorch-cluster pytorch-scatter pytorch-sparse -c pyg -y
-pip install torch-geometric
-
-cd libs/pointops
-python setup.py install
-cd ../..
-
-# spconv (SparseUNet)
-# refer https://github.com/traveller59/spconv
-pip install spconv-cu118  # choose version match your local cuda version
-
-# Open3D (visualization, optional)
-pip install open3d
-
-
 
 ## Data Preparation
 Please further refer xxx
