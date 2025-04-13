@@ -14,10 +14,6 @@
 </div>
 
 
-
-
-
-
 ## Highlights
 - *
 - *
@@ -60,18 +56,27 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## API Configuration Setup
 
-Before using the Atom of Thoughts (AoT) framework, you need to set up your API key and URL:
+Before using the Syzygy-of-thoughts (SoT) framework, you need to set up your API key and URL:
 
-1. Create an apikey.py file in the project root directory with the following format:
+1. Create an `apikey.py` file in the project root directory with the following format:
 
+```
 url = "https://api.openai.com/v1"  # Replace with your API endpoint
 api_key = [
     "your-api-key-here",  # Replace with your actual API key
     # You can add multiple API keys to improve concurrency performance.
 ]
+```
 
-### Api Key 获取途径
+### 获取 API Key
 
+请根据下列平台获取您的 API Key：
+
+- **ChatGPT**: [注册并获取 API Key](https://platform.openai.com/signup)
+- **Qwen (通义千问)**: [登录并获取 API Key](https://bailian.console.aliyun.com/?tab=model#/api-key)
+- **Gemma**: [创建账户并获取 API Token](https://www.netmind.ai/user/apiToken)
+
+获取 API Key 后，您可以将其配置到项目中以启用相关功能。
 
 
 
@@ -142,3 +147,9 @@ xxxxxxxxxxxxx
 | CoT                                | 83.2%     | 79.0%     | 90.4%          | 97.7%     | 68.9%    | 68.1%    | 64.6%   | 77.7%    | 49.0%      |
 | CoT-SC (n=5)                       | 86.1%     | 81.0%     | 93.3%          | 98.0%     | 71.7%    | 70.6%    | 66.7%   | 80.2%    | 52.2%      |
 | **SoT (Ours)**                     | **92.1%** | **92.5%** | **96.1%**      | **99.2%** | **77.2%** | **72.3%** | **69.1%** | **82.5%** | **55.0%**  |
+
+
+
+
+
+
