@@ -78,9 +78,9 @@ cd audio-deepfake-source-tracing
 ```
 ### 2.创建虚拟环境（可选但推荐）
 
-为避免项目依赖与系统环境中的其他 Python 包冲突，建议使用虚拟环境。这里提供两种创建虚拟环境的方式：使用  `Anaconda  `或 ` Python  `内置的  `venv ` 工具
+为避免项目依赖与系统环境中的其他 Python 包冲突，建议使用虚拟环境。这里提供两种创建虚拟环境的方式：使用  `Anaconda `或 ` Python `内置的  `venv` 工具
 
-#### 使用 `Anaconda `
+#### 使用 `Anaconda`
 
 ```
 # 创建虚拟环境
@@ -89,7 +89,7 @@ conda create -n venv python=3.9
 # 激活虚拟环境
 conda activate venv
 ```
-#### 使用 `venv `
+#### 使用 `venv`
 ```
 # 创建虚拟环境
 python -m venv venv
@@ -103,14 +103,14 @@ source venv/bin/activate
 
 ### 3.安装项目依赖
 
-项目依赖库信息记录在 `requirements.tx `t文件中，使用pip安装这些依赖：
+项目依赖库信息记录在 `requirements.txt`文件中，使用pip安装这些依赖：
 
 ```
 pip install -r requirements.txt
 ```
 
 ### 4.数据准备
-项目提供了实验使用的数据集以及目前广为使用的数据集，方便您进行自己的实验和运行代码。项目默认数据集路径在 ` sot.yaml  `文件的 ` runner.default_dataset  `字段中指定，请确保该路径下的数据集文件存在。若要使用其他数据集，可修改该字段的值。
+项目提供了实验使用的数据集以及目前广为使用的数据集，方便您进行自己的实验和运行代码。项目默认数据集路径在 `sot.yaml `文件的 `runner.default_dataset `字段中指定，请确保该路径下的数据集文件存在。若要使用其他数据集，可修改该字段的值。
 
 ### 5.运行项目
 安装完成后，可按照以下命令运行项目：
@@ -120,15 +120,15 @@ python main.py
 
 ## 常见问题及解决方法
 ## 1.依赖安装失败
-确保网络连接正常，并且 `requirements.txt `文件中的依赖版本与 ` Python ` 版本兼容。可尝试手动安装每个依赖，或者更新 `pip `到最新版本：
+确保网络连接正常，并且 `requirements.txt `文件中的依赖版本与 `Python` 版本兼容。可尝试手动安装每个依赖，或者更新 `pip`到最新版本：
 
 ```
 pip install --upgrade pip
 ```
 ### 2.虚拟环境激活失败
-确保使用的命令与操作系统兼容。在 ` Windows  `上使用  `PowerShell ` 时，可能需要以管理员身份运行 ` PowerShell  `才能激活虚拟环境。
+确保使用的命令与操作系统兼容。在 ` Windows`上使用  `PowerShell` 时，可能需要以管理员身份运行 `PowerShell`才能激活虚拟环境。
 ### 3.数据集加载失败
-检查 `sot.yaml `文件中的 `runner.default_dataset `路径是否正确，以及数据集文件格式是否符合要求（通常为 ` JSON  `或 ` JSONL  `格式）。
+检查 `sot.yaml `文件中的 `runner.default_dataset`路径是否正确，以及数据集文件格式是否符合要求（通常为 `JSON`或 ` JSONL`格式）。
 ## API Configuration Setup
 
 Before using the Syzygy-of-thoughts (SoT) framework, you need to set up your API key and URL:
