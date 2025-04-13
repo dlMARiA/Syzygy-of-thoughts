@@ -94,7 +94,8 @@ If you find SoT useful to your research, please cite our work as an acknowledgme
 
 
 ## Installation
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+###1.克隆项目仓库
+首先，将项目仓库克隆到本地。打开终端或命令提示符，执行以下命令：
 
 ## API Configuration Setup
 
