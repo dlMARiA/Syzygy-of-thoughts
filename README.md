@@ -59,14 +59,9 @@ project/
   - [x] xxx
 
 
-## Citation
-If you find SoT useful to your research, please cite our work as an acknowledgment.(*^▽^*)
-```bib
-
-```
 
 
-## Installation
+## Quick Start
 
 ### 1.克隆项目仓库
 
@@ -111,6 +106,49 @@ pip install -r requirements.txt
 
 ### 4.数据准备
 项目提供了实验使用的数据集以及目前广为使用的数据集，方便您进行自己的实验和运行代码。项目默认数据集路径在 `sot.yaml `文件的 `runner.default_dataset `字段中指定，请确保该路径下的数据集文件存在。若要使用其他数据集，可修改该字段的值。
+
+### 1.数据准备
+在运行项目之前，需要准备好相应的数据集。本项目已经为您提供了多种常见的数据集，如数学类、问答类、体育类等，以满足不同场景的测试需求。
+项目默认的数据集路径在 `sot.yaml` 文件的`runner.default_dataset` 字段中指定，请确保该路径下的数据集文件存在。若要使用其他数据集，可直接修改该字段的值。
+项目支持多种数据集类型，不同类型的数据集加载方式可能不同，具体的数据集加载函数映射在 `sot.yaml` 文件的 `dataset_loader_mapping` 字段中定义。例如：
+```
+dataset_loader_mapping:
+  math: utils.dataloader.load_math_bbh_mmlu
+  bbh: utils.dataloader.load_math_bbh_mmlu
+  MMLU: utils.dataloader.load_math_bbh_mmlu
+  gsm8k: utils.dataloader.load_other_datasets
+  # 其他数据集类型...
+```
+### 2.配置API信息
+项目使用 OpenAI API 进行模型调用，需要在 `sot.yaml` 文件中配置 API 密钥和相关信息
+```
+openai:
+  api_key: 'your-actual-api-key'  # 替换为你自己的 OpenAI API 密钥
+  model_name: gpt-4o-mini  # 使用模型的名称
+  base_url: https://api.nuwaapi.com/v1  # 模型的网络接口地址
+  max_tokens: 2048  # 模型回答最大 token 长度
+  max_retries: 3  # 网络超时重试次数
+  temperature: 0  # 模型温度
+```
+如果您想使用的模型并非基于 OpenAI 的接口，您可以模仿 sot.yaml 中的 openai 配置信息重新书写您的模型的配置信息。以下以 Google PaLM API 为例，展示如何配置：
+```google:
+  api_key: 'your-google-api-key'  # 替换为你自己的 Google API 密钥
+  model_name: models/text-bison-001  # 使用的 Google 模型名称
+  base_url: https://generativelanguage.googleapis.com/v1beta2  # Google API 的基础 URL
+  max_tokens: 2048  # 模型回答最大 token 长度
+  max_retries: 3  # 网络超时重试次数
+  temperature: 0.2  # 模型温度
+
+```
+同时，您还需要在 config 文件夹下的 `settings.py` 文件中进行相应的修改。打开 `settings.py` 文件，找到 `Settings` 类，添加新的配置信息读取逻辑。
+此外，还需要创建类似 `openai_client.py` 的脚本对新模型进行初始化逻辑。创建一个新的函数来初始化 `Google PaLM` 模型。
+### 3.运行项目
+完成上述准备工作后，就可以运行项目进行测试了。在项目根目录下执行以下命令：
+```
+python main.py
+```
+执行该命令后，程序将自动加载数据集、配置 API 信息，并调用相应的模型进行测试，最后输出测试报告，包含总问题数、正确答案数、准确率以及答错问题的编号等信息。
+
 
 ### 5.运行项目
 安装完成后，可按照以下命令运行项目：
@@ -179,48 +217,7 @@ api_key = [
 ## Data Preparation
 Please further refer xxx
 
-## Quick Start
-### 1.数据准备
-在运行项目之前，需要准备好相应的数据集。本项目已经为您提供了多种常见的数据集，如数学类、问答类、体育类等，以满足不同场景的测试需求。
-项目默认的数据集路径在 `sot.yaml` 文件的`runner.default_dataset` 字段中指定，请确保该路径下的数据集文件存在。若要使用其他数据集，可直接修改该字段的值。
-项目支持多种数据集类型，不同类型的数据集加载方式可能不同，具体的数据集加载函数映射在 `sot.yaml` 文件的 `dataset_loader_mapping` 字段中定义。例如：
-```
-dataset_loader_mapping:
-  math: utils.dataloader.load_math_bbh_mmlu
-  bbh: utils.dataloader.load_math_bbh_mmlu
-  MMLU: utils.dataloader.load_math_bbh_mmlu
-  gsm8k: utils.dataloader.load_other_datasets
-  # 其他数据集类型...
-```
-### 2.配置API信息
-项目使用 OpenAI API 进行模型调用，需要在 `sot.yaml` 文件中配置 API 密钥和相关信息
-```
-openai:
-  api_key: 'your-actual-api-key'  # 替换为你自己的 OpenAI API 密钥
-  model_name: gpt-4o-mini  # 使用模型的名称
-  base_url: https://api.nuwaapi.com/v1  # 模型的网络接口地址
-  max_tokens: 2048  # 模型回答最大 token 长度
-  max_retries: 3  # 网络超时重试次数
-  temperature: 0  # 模型温度
-```
-如果您想使用的模型并非基于 OpenAI 的接口，您可以模仿 sot.yaml 中的 openai 配置信息重新书写您的模型的配置信息。以下以 Google PaLM API 为例，展示如何配置：
-```google:
-  api_key: 'your-google-api-key'  # 替换为你自己的 Google API 密钥
-  model_name: models/text-bison-001  # 使用的 Google 模型名称
-  base_url: https://generativelanguage.googleapis.com/v1beta2  # Google API 的基础 URL
-  max_tokens: 2048  # 模型回答最大 token 长度
-  max_retries: 3  # 网络超时重试次数
-  temperature: 0.2  # 模型温度
 
-```
-同时，您还需要在 config 文件夹下的 `settings.py` 文件中进行相应的修改。打开 `settings.py` 文件，找到 `Settings` 类，添加新的配置信息读取逻辑。
-此外，还需要创建类似 `openai_client.py` 的脚本对新模型进行初始化逻辑。创建一个新的函数来初始化 `Google PaLM` 模型。
-### 3.运行项目
-完成上述准备工作后，就可以运行项目进行测试了。在项目根目录下执行以下命令：
-```
-python main.py
-```
-执行该命令后，程序将自动加载数据集、配置 API 信息，并调用相应的模型进行测试，最后输出测试报告，包含总问题数、正确答案数、准确率以及答错问题的编号等信息。
 
 
 ## Model Zoo
@@ -257,6 +254,10 @@ python main.py
 
 
 
+## Citation
+If you find SoT useful to your research, please cite our work as an acknowledgment.(*^▽^*)
+```bib
 
+```
 
 
