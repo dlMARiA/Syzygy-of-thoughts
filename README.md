@@ -1,16 +1,14 @@
 # Syzygy-of-thoughts
-🚀 **Hello, [社交平台账号](https://www.youtube.com/watch?v=gZABle836yM)**  
-- xxxxxxxxxxxxxxxxxxxxxxx
-
-<div align='left'>
-<img src="assets/rader.png" alt="teaser" width="400" />
-</div>
+<p align="center">
+ <img width="100px" src="https://github.githubassets.com/images/mona-loading-default.gif" align="center" alt="Logo" />
+ <h3 align="center">"Syzygy" is derived from the Greek word syzygia (συσυγία), meaning "union" or "pairing."</h3>
+</p>
 本项目为论文《Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution》的代码实现。该论文提出了一种新颖的推理框架 Syzygy of Thoughts (SoT)，通过将交换代数与同调代数中的 最小自由分解 (Minimal Free Resolution, MFR) 原理融入思维链 (Chain of Thought, CoT)，显著提升大型语言模型 (LLM) 在复杂推理任务中的性能。SoT 针对传统 CoT 在高维、非线性推理中的局限，引入模块、自由性、映射、精确性、最小性和 Betti 数等结构化分解策略，将复杂问题转化为紧凑且逻辑自洽的推理单元。
 实验在 GSM8K 和 MATH 等数据集上进行，涵盖 GPT-4o-mini、Qwen2.5 等模型，SoT 的推理准确率达到或超越主流 CoT 标准（例如，GSM8K 96.0%，MATH 79.1%），且在高温条件下保持稳定性，推理时间更具可扩展性。
 
 
 <div align='left'>
-<img src="assets/main.png" alt="teaser" width="800" />
+<img src="assets/main.png" alt="teaser" width="900" />
 </div>
 
 
@@ -19,50 +17,25 @@
 本项目实现了《Syzygy of Thoughts》论文中的 SoT 推理框架，包含数据集、模型配置、源代码和实验结果。以下是项目目录结构：
 
 ```plaintext
-SoT-Paper-Code/
-├── **data/**                     # 数据集存放目录
-│   ├── gsm8k/                    # GSM8K 数学推理数据集
-│   ├── math/                     # MATH 高级数学数据集
-│   ├── svamp/                    # SVAMP 数学推理数据集
-│   └── others/                   # 其他数据集（MultiArith、ASDiv、AQUA 等）
-├── **models/**                   # 模型配置文件目录
-│   ├── gpt4o_mini/               # GPT-4o-mini 模型配置
-│   ├── qwen2.5/                  # Qwen2.5 系列模型配置
-│   └── gemma/                    # Gemma 模型配置
-├── **src/**                      # 源代码目录
-│   ├── **sot.py**                # SoT 推理框架核心实现
-│   ├── cot.py                    # CoT 基线推理实现
-│   ├── cot_sc.py                 # CoT-SC (n=5) 推理实现
-│   ├── mfr_utils.py              # 最小自由分解工具函数
-│   └── evaluate.py               # 性能评估脚本
-├── **experiments/**              # 实验结果与可视化
-│   ├── figures/                  # 实验图表（折线图、箱型图等）
-│   └── logs/                     # 实验运行日志
-├── **requirements.txt**          # 项目依赖环境配置
-├── **README.md**                 # 项目说明文档
-└── run.sh                        # 一键运行脚本s
-SoT-Paper-Code/
-├── data/                     # 数据集文件
-│   ├── gsm8k/                # GSM8K 数据集
-│   ├── math/                 # MATH 数据集
-│   ├── svamp/                # SVAMP 数据集
-│   └── others/               # 其他数据集（MultiArith, ASDiv, AQUA 等）
-├── models/                   # 模型配置文件
-│   ├── gpt4o_mini/           # GPT-4o-mini 配置
-│   ├── qwen2.5/              # Qwen2.5 配置
-│   └── gemma/                # Gemma 模型配置
-├── src/                      # 源代码
-│   ├── sot.py                # SoT 推理框架实现
-│   ├── cot.py                # CoT 基线实现
-│   ├── cot_sc.py             # CoT-SC (n=5) 实现
-│   ├── mfr_utils.py          # MFR 工具函数
-│   └── evaluate.py           # 评估脚本
-├── experiments/              # 实验结果与可视化
-│   ├── figures/              # 图表（折线图、箱型图）
-│   └── logs/                 # 实验日志
-├── requirements.txt          # 依赖环境
-├── README.md                 # 项目说明
-└── run.sh                    # 运行脚本
+project/
+├── **config/**                   # 配置文件目录
+│   ├── sot.yaml                 # SoT 框架配置文件
+│   └── settings.py              # 项目全局设置脚本
+├── **interfaces/**               # 接口定义目录
+│   └── __init__.py              # 接口初始化文件
+├── **models/**                   # 模型接口目录
+│   └── openai_client.py         # OpenAI 模型客户端实现
+├── **prompts/**                  # 提示模板目录
+│   └── sot_prompt.py            # SoT 推理提示模板
+├── **utils/**                    # 工具函数目录
+│   ├── dataloader.py            # 数据加载工具
+│   ├── parse_answer.py          # 答案解析函数
+│   ├── parse_factory.py         # 答案解析工厂
+│   ├── answer_validator.py      # 答案验证工具
+│   ├── get_prompt_template.py   # 提示模板获取函数
+│   └── runner.py                # 实验运行脚本
+├── **main.py**                   # 项目主入口脚本
+└── app.log                      # 项目运行日志
 ```
 
 
@@ -94,66 +67,8 @@ If you find SoT useful to your research, please cite our work as an acknowledgme
 
 
 ## Installation
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-### 1.克隆项目仓库
-
-首先，将项目仓库克隆到本地。打开终端或命令提示符，执行以下命令：
-
-```
-git clone https://github.com/piotrkawa/audio-deepfake-source-tracing.git
-cd audio-deepfake-source-tracing
-```
-### 2.创建虚拟环境（可选但推荐）
-
-为避免项目依赖与系统环境中的其他 Python 包冲突，建议使用虚拟环境。可使用venv（Python 内置的虚拟环境工具）来创建和管理虚拟环境。
-
-```
-推荐使用anaconda进行环境管理
-#创建虚拟环境
-conda create -n venv pyrhon=3.9
-
-#激活虚拟环境
-conda activate venv
-
-# 创建虚拟环境
-python -m venv venv python=3.9
-
-# 激活虚拟环境
-# 在Windows上
-.\venv\Scripts\activate
-# 在Linux/Mac上
-source venv/bin/activate
-```
-
-### 3.安装项目依赖
-
-项目依赖库信息记录在requirements.txt文件中，使用pip安装这些依赖：
-
-```
-pip install -r requirements.txt
-```
-
-### 4.数据准备
-项目提供了实验使用的数据集以及目前广为使用的数据集，方便您进行自己的实验和运行我们的代码
-项目默认数据集路径在sot.yaml文件的runner.default_dataset字段中指定，确保该路径下的数据集文件存在。若要使用其他数据集，可修改该字段的值
-
-### 5.运行项目
-安装完成后，可按照以下命令运行项目：
-```
-python main.py
-```
-
-## 常见问题及解决方法
-## 1.依赖安装失败
-确保网络连接正常，并且requirements.txt文件中的依赖版本与 Python 版本兼容。可尝试手动安装每个依赖，或者更新pip到最新版本：
-
-```
-pip install --upgrade pip
-```
-### 2.虚拟环境激活失败
-确保使用的命令与操作系统兼容。在 Windows 上使用 PowerShell 时，可能需要以管理员身份运行 PowerShell 才能激活虚拟环境。
-### 3.数据集加载失败
-检查sot.yaml文件中的runner.default_dataset路径是否正确，以及数据集文件格式是否符合要求（通常为 JSON 或 JSONL 格式）。
 ## API Configuration Setup
 
 Before using the Syzygy-of-thoughts (SoT) framework, you need to set up your API key and URL:
@@ -178,18 +93,14 @@ api_key = [
 
 获取 API Key 后，您可以将其配置到项目中以启用相关功能。
 
-
-
 ### Requirements
- Syzygy-of-thoughts :
-
-(Recommendation)
-- Ubuntu: 
-- CUDA: 
-- PyTorch: 
+  - Ubuntu: 
+  - CUDA: 
+  - PyTorch: 
 
 ### Environment
-# 改成我们自己的
+# 
+
 
 ## Data Preparation
 Please further refer xxx
@@ -200,6 +111,12 @@ xxxxxxxxxxxxx
 
 ## Model Zoo
 ### 1. 实验性能
+
+<div align='left'>
+<img src="assets/rader.png" alt="teaser" width="400" />
+</div>
+
+
 以下表格比较了 CoT、CoT-SC (n=5) 和 SoT 在多种任务上的性能，涵盖数学推理（GSM8K、SVAMP、MultiArith、ASDiv、AQUA）、通用知识（MMLU）、多任务问答（BBH）、时间推理（Date）和逻辑推理（CLUTRR）。SoT 在所有模型和任务中均取得最佳表现。
 | **Method**                        | **GSM8K** | **SVAMP** | **MultiArith** | **ASDiv** | **AQUA** | **MMLU** | **BBH** | **Date** | **CLUTRR** |
 |------------------------------------|:---------:|:---------:|:--------------:|:---------:|:--------:|:--------:|:-------:|:--------:|:----------:|
