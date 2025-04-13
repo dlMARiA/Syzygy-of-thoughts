@@ -161,7 +161,7 @@ api_key = [
 
 请根据下列平台获取您的 API Key：
 
-- **ChatGPT**: [注册并获取 API Key](https://platform.openai.com/signup)
+- ![](https://img.shields.io/badge/-ChatGPT-412991?style=flat-square&logo=openai&logoColor=FFFFFF) **ChatGPT**: [注册并获取 API Key](https://platform.openai.com/signup) 
 - **Qwen (通义千问)**: [登录并获取 API Key](https://bailian.console.aliyun.com/?tab=model#/api-key)
 - **Gemma**: [创建账户并获取 API Key](https://www.netmind.ai/user/apiToken)
 
