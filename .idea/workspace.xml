@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="09dac2f0-a673-4139-be7d-7e74c999b357" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/answer_validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/dataloader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/get_prompt_template.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/parse_answer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/parse_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main -_23.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _12.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _13.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _14.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _15.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _16.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _17.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _18.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _19.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _20.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _21.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _22.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _24.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _25.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main _9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/log/logger_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/openai_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prompts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/openai_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prompts/cot_prompt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prompts/sot_prompt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prompts/standard_prompt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/prompts/sot_prompt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/answerValidatoer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/dataloader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/get_prompt_template.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/parse_answer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/parse_factory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/runner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2vLe5j3QeYelC6v8YQrPGkSZVzf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.111111.executor": "Run",
+    "Python.main -_23.executor": "Run",
+    "Python.main _10.executor": "Run",
+    "Python.main _11.executor": "Run",
+    "Python.main _12.executor": "Run",
+    "Python.main _13.executor": "Run",
+    "Python.main _14.executor": "Run",
+    "Python.main _15.executor": "Run",
+    "Python.main _16.executor": "Run",
+    "Python.main _17.executor": "Run",
+    "Python.main _18.executor": "Run",
+    "Python.main _19.executor": "Run",
+    "Python.main _2.executor": "Run",
+    "Python.main _20.executor": "Run",
+    "Python.main _21.executor": "Run",
+    "Python.main _22.executor": "Run",
+    "Python.main _24.executor": "Run",
+    "Python.main _25.executor": "Run",
+    "Python.main _3.executor": "Run",
+    "Python.main _5.executor": "Run",
+    "Python.main _6.executor": "Run",
+    "Python.main _7.executor": "Run",
+    "Python.main _8.executor": "Run",
+    "Python.main _9.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main_1.executor": "Run",
+    "Python.main_4.executor": "Run",
+    "Python.runner.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/pycharmcode/langchian_new/utils",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pycharmcode\langchian_new\utils" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="langchian_new" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-a5bc9544c897-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.23654.177" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="09dac2f0-a673-4139-be7d-7e74c999b357" name="更改" comment="" />
+      <created>1743928599948</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743928599948</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

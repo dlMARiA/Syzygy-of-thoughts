@@ -1,0 +1,763 @@
+2025-04-13 14:29:42,406 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:29:42,406 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:29:42,811 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module":"{problem}",
+        "betti_numbers":"{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:29:42,813 - log.logger_utils - ERROR - Failed to parse the template as JSON.
+2025-04-13 14:29:42,813 - log.logger_utils - ERROR - Program terminated abnormally: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'str'>
+2025-04-13 14:31:08,345 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:31:08,346 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:31:08,772 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module":"{problem}",
+        "betti_numbers":"{betti_number}",
+        "free_conditions": {
+            auxiliary_condition: "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            condition1: "",
+            condition2: "",
+            condition3: "",
+            condition4: "",
+            condition5: "",
+            condition6: "",
+            condition7: "",
+            condition8: ""
+        },
+        "mapping": {
+            explanation: "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            solution1: ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:31:08,772 - log.logger_utils - ERROR - Failed to parse the template as JSON.
+2025-04-13 14:31:08,772 - log.logger_utils - INFO - Test completed.
+2025-04-13 14:31:42,116 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:31:42,116 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:31:42,503 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module":"{problem}",
+        "betti_numbers":"{betti_number}",
+        "free_conditions": {
+            auxiliary_condition: "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            condition1: "",
+            condition2: "",
+            condition3: "",
+            condition4: "",
+            condition5: "",
+            condition6: "",
+            condition7: "",
+            condition8: ""
+        },
+        "mapping": {
+            explanation: "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            solution1: ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:31:42,503 - log.logger_utils - ERROR - Failed to parse the template as JSON.
+2025-04-13 14:31:42,503 - log.logger_utils - INFO - Test completed.
+2025-04-13 14:32:52,829 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:32:52,829 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:32:53,222 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:32:53,222 - log.logger_utils - ERROR - Failed to parse the template as JSON.
+2025-04-13 14:32:53,222 - log.logger_utils - INFO - Test completed.
+2025-04-13 14:33:18,743 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:33:18,743 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:33:19,117 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:33:19,117 - log.logger_utils - ERROR - Failed to parse the template as JSON.
+2025-04-13 14:33:19,117 - log.logger_utils - INFO - Test completed.
+2025-04-13 14:34:30,908 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:34:30,908 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:34:31,301 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:34:31,304 - log.logger_utils - ERROR - Program terminated abnormally: No module named 'utils.dataloader.DatasetLoader'; 'utils.dataloader' is not a package
+2025-04-13 14:35:20,517 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:35:20,517 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:35:20,933 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:35:20,933 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:39:49,747 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:39:49,747 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:39:50,141 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:39:50,141 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:41:20,611 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:41:20,611 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:41:20,996 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:41:20,996 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:43:02,070 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:43:02,071 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:43:02,465 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:43:02,466 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:45:19,965 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:45:19,965 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:45:20,351 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:45:20,351 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:46:13,657 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:46:13,657 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:46:14,042 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:46:14,042 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:47:01,991 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:47:01,991 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:47:02,380 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:47:02,380 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:48:47,234 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:48:47,235 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:48:47,616 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:48:47,617 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:50:14,443 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:50:14,443 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:50:14,823 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:50:14,823 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:50:38,425 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:50:38,425 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:50:38,806 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:50:38,807 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:54:15,881 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:54:15,882 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:54:16,256 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:54:16,256 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:54:36,354 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:54:36,355 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:54:36,736 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:54:36,736 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:54:42,380 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:54:42,380 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:54:42,769 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:54:42,770 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:54:57,585 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:54:57,585 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:54:57,962 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:54:57,963 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:55:05,244 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:55:05,244 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:55:05,620 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:55:05,620 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:55:11,826 - log.logger_utils - INFO - Starting the test...
+2025-04-13 14:55:50,503 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 14:56:31,380 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
+2025-04-13 14:56:55,467 - log.logger_utils - ERROR - Program terminated abnormally: module 'utils.dataloader' has no attribute 'load_other_datasets'
+2025-04-13 14:59:24,639 - log.logger_utils - INFO - Starting the test...
+2025-04-13 15:03:02,942 - log.logger_utils - INFO - Current temperature: 0
+2025-04-13 15:09:06,581 - log.logger_utils - INFO - Got SOT template for gsm8k before modification:
+
+{
+    "tip": "!! You must answer in JSON format!!",
+    "analysis": {
+        "module": "{problem}",
+        "betti_numbers": "{betti_number}",
+        "free_conditions": {
+            "auxiliary_condition": "Describe auxiliary conditions added to solve the problem",
+            "condition1": "",
+            "condition2": "",
+            "condition3": "",
+            "condition4": "",
+            "condition5": "",
+            "condition6": "",
+            "condition7": "",
+            "condition8": ""
+        },
+        "mapping": {
+            "explanation": "<Generate multiple solution processes step by step using auxiliary conditions. Ensure that each process solves the problem from start to finish.>",
+            "solution1": ""
+        },
+        "minimality": {
+            "optimality_analysis": "<Evaluate and examine all the solutions mentioned above, and select the best solution.>",
+            "optimal_solution": ""
+        }
+    },
+    "final_answer": "<Must use the following format: [Pure Number]>"
+}
+
