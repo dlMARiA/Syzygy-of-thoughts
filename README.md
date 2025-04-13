@@ -67,7 +67,81 @@ If you find SoT useful to your research, please cite our work as an acknowledgme
 
 
 ## Installation
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+### 1.克隆项目仓库
+
+首先，将项目仓库克隆到本地。打开终端或命令提示符，执行以下命令：
+
+```
+git clone https://github.com/piotrkawa/audio-deepfake-source-tracing.git
+cd audio-deepfake-source-tracing
+```
+### 2.创建虚拟环境（可选但推荐）
+
+为避免项目依赖与系统环境中的其他 Python 包冲突，建议使用虚拟环境。这里提供两种创建虚拟环境的方式：使用 Anaconda 或 Python 内置的 venv 工具
+
+#### 使用Anaconda
+
+```
+# 创建虚拟环境
+conda create -n venv python=3.9
+
+# 激活虚拟环境
+conda activate venv
+```
+#### 使用venv
+```
+# 创建虚拟环境
+python -m venv venv
+
+# 激活虚拟环境
+# 在 Windows 上
+.\venv\Scripts\activate
+# 在 Linux/Mac 上
+source venv/bin/activate
+```
+
+### 3.安装项目依赖
+
+项目依赖库信息记录在requirements.txt文件中，使用pip安装这些依赖：
+
+```
+pip install -r requirements.txt
+```
+
+### 4.数据准备
+项目提供了实验使用的数据集以及目前广为使用的数据集，方便您进行自己的实验和运行代码。项目默认数据集路径在 sot.yaml 文件的 runner.default_dataset 字段中指定，请确保该路径下的数据集文件存在。若要使用其他数据集，可修改该字段的值。
+
+### 5.运行项目
+安装完成后，可按照以下命令运行项目：
+```
+python main.py
+```
+
+## 常见问题及解决方法
+## 1.依赖安装失败
+确保网络连接正常，并且requirements.txt文件中的依赖版本与 Python 版本兼容。可尝试手动安装每个依赖，或者更新pip到最新版本：
+
+```
+pip install --upgrade pip
+```
+### 2.虚拟环境激活失败
+确保使用的命令与操作系统兼容。在 Windows 上使用 PowerShell 时，可能需要以管理员身份运行 PowerShell 才能激活虚拟环境。
+### 3.数据集加载失败
+检查sot.yaml文件中的runner.default_dataset路径是否正确，以及数据集文件格式是否符合要求（通常为 JSON 或 JSONL 格式）。
+## API Configuration Setup
+
+Before using the Syzygy-of-thoughts (SoT) framework, you need to set up your API key and URL:
+
+1. Create an `Syzygy-of-thoughts/config/sot.yaml` file in the project root directory with the following format:
+
+```
+url = "https://api.openai.com/v1"  # Replace with your API endpoint
+api_key = [
+    "your-api-key-here",  # Replace with your actual API key
+    # You can add multiple API keys to improve concurrency performance.
+]
+```
 
 ## API Configuration Setup
 
