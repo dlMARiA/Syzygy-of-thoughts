@@ -171,9 +171,19 @@ After obtaining your API key, you can configure it in the project to enable the 
 ## experiment
 ### 1. Experimental Performance
 
+<div style="display: flex; justify-content: space-around;">
+  <img src="assets/plot1.png" alt="图片1" style="width: 45%;">
+  <img src="assets/plot2.png" alt="图片2" style="width: 45%;">
+  <img src="assets/bettiablation.png" alt="图片2" style="width: 45%;">
+</div>
+
+
+
 <div align='left'>
 <img src="assets/rader.png" alt="teaser" width="400" />
 </div>
+
+
 SoT (Ours) achieved performance improvements
 compared to CoT and CoT-SC on two models across nine
 datasets. The inner circle shows three methods of Qwen2.5,
