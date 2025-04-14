@@ -35,7 +35,7 @@ class DatasetLoader(DatasetLoaderInterface):
         return dataset
 
     def load_other_datasets(self, file_path):
-        print("load_other_datasets method is called.")  # 添加打印语句
+        print("load_other_datasets method is called.")  # Add print statement
         dataset = []
         try:
             with Path(file_path).open("r", encoding='utf-8') as f:
@@ -52,7 +52,7 @@ class DatasetLoader(DatasetLoaderInterface):
         return dataset
 
     def load_dataset(self, file_path: str, dataset_type: str) -> list:
-        # 确保键大小写一致
+        # Make sure keys are capitalized consistently
         loader_function = {
             'math': self.load_math_bbh_mmlu,
             'bbh': self.load_math_bbh_mmlu,

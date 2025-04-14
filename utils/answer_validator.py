@@ -1,7 +1,7 @@
 import logging
 from utils.parse_answer import parse_dataset_answer, parse_llm_answer
 
-# 配置日志
+# Configuration log
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 

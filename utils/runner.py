@@ -22,13 +22,13 @@ class Runner:
             temperature: float = settings.TEMPERATURE):
         try:
             settings.set_temperature(temperature)
-            # 打印当前温度
+            # Print current temperature
             logger.info(f"Current temperature: {settings.TEMPERATURE}")
 
             # Initialize the model
             llm = initialize_llm()
 
-            # 构建链式调用
+            # Building a chain call
             prompt_template = self.prompt_factory.get_prompt_template(method, dataset_type, betti_number, solution_number)
             if prompt_template is None:
                 return
@@ -60,11 +60,11 @@ class Runner:
                     if dataset_type == 'aqua':
                         input_dict["options"] = item["options"]
 
-                    # 手动填充模板并打印填充后的消息
+                    # Manually populate the template and print the populated message
                     filled_message = prompt_template.format_messages(**input_dict)[0].content
                     logger.info(f"Message filled with input data for question {idx}/{total}:\n{filled_message}")
 
-                    # 使用链式调用获取响应
+                    # Using chained calls to get responses
                     response = chain.invoke(input_dict)
                     filled_template = response.content
 

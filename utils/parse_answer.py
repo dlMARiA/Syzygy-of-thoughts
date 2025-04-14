@@ -1,45 +1,45 @@
 import re
 import json
-from utils.parse_factory import AQUAParser  # 导入 AQUAParser 类
+from utils.parse_factory import AQUAParser  # Import the AQUAParser class
 
 def clean_number_string(num_str):
-    # 移除所有非数字、非符号、非小数点、非逗号、非#字符
+    # Remove all non-digits, non-symbols, non-decimal points, non-commas, and non-# characters
     cleaned = re.sub(r'[^0-9eE\+\-\.,%#]', '', num_str.strip())
     return cleaned
 
 def convert_to_standard(num_str):
     try:
         num_str = num_str.strip()
-        # 处理空字符串
+        # Handling empty strings
         if not num_str:
             return "0"
-        # 处理科学计数法
+        # Handling scientific notation
         if 'e' in num_str.lower():
             num = float(num_str)
             return str(int(num)) if num.is_integer() else str(num)
-        # 处理整数/浮点
+        # Handling integers/floating points
         return str(int(float(num_str))) if '.' in num_str and float(num_str).is_integer() else num_str
     except:
         return "0"
 
 def parse_llm_answer(filled_template):
     """
-    解析LLM返回的模板，提取答案
-    :param filled_template: LLM填充后的模板
-    :return: 解析后的答案
+    Parse the template returned by LLM and extract the answer
+    :param filled_template: LLM filled template
+    :return: Analyzed answer
     """
     try:
-        # 基础清理
+        # Basic cleaning
         filled_template = filled_template.replace("```json", "").replace("```", "").strip()
         filled_template = re.sub(r'\s+', ' ', filled_template)
         filled_template = re.sub(r'\\([^\\])', r'\\\\\1', filled_template)
 
-        # 尝试使用正则表达式提取 final_answer
+        # Try using regular expression to extract final_answer
         match = re.search(r'"final_answer": "([^"]*)"', filled_template)
         if match:
             final_answer = match.group(1).strip()
         else:
-            # 解析 JSON
+            # Parse JSON
             try:
                 response = json.loads(filled_template)
                 final_answer = str(response.get("final_answer", "")).strip()
@@ -47,7 +47,7 @@ def parse_llm_answer(filled_template):
                 print(f"JSON 解析错误: {e}, 原始答案: {filled_template[:100]}...")
                 return "0"
 
-        # 合并日期匹配规则
+        # Merge date matching rules
         date_patterns = [
             r'(\d{2})/(\d{2})/(\d{4})',
             r'\[(\d{2}/\d{2}/\d{4})\]',
@@ -74,7 +74,7 @@ def parse_llm_answer(filled_template):
                     day = date_match.group(3)
                     return f"{month}{day}{year}"
 
-        # 原有数字提取逻辑
+        # Original digital extraction logic
         patterns = [
             r'\[([+-]?\d+\.?\d*)\]',
             r'([+-]?\d+\.?\d*)'
@@ -85,12 +85,12 @@ def parse_llm_answer(filled_template):
                 num_str = match.group(1).replace(',', '')
                 return convert_to_standard(num_str)
 
-        # 新增关系类答案提取分支
+        # Added a new branch for relationship-based answer extraction
         relation_match = re.search(r'([a-zA-Z-]+)', final_answer)
         if relation_match:
             return relation_match.group(1)
 
-        # 暴力提取所有数字
+        # Brute force extraction of all numbers
         cleaned = re.sub(r'[^0-9]', '', final_answer)
         return convert_to_standard(cleaned)
     except Exception as e:
@@ -139,7 +139,7 @@ dataset_parsers = {
 }
 
 def parse_dataset_answer(raw_answer, dataset_type):
-    # 统一转换为大写进行匹配
+    # Convert to uppercase for matching
     dataset_type = dataset_type.upper()
     for key in dataset_parsers.keys():
         if key.upper() == dataset_type:

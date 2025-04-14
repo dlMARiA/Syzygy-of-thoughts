@@ -23,17 +23,17 @@ logger = Logger().get_logger()
 
 def modify_sot_template(template):
     try:
-        # 解析模板为字典
+        # Parse template as dictionary
         template_dict = json.loads(template)
 
-        # 直接将所有单大括号替换为双大括号
+        # Simply replace all single curly braces with double curly braces
         modified_template_str = json.dumps(template_dict, indent=4).replace('{', '{{').replace('}', '}}')
 
-        # 用正则匹配替换 {{problem}} 和 {{betti_number}} 为 {problem} 和 {betti_number}
+        # Replace {{problem}} and {{betti_number}} with {problem} and {betti_number} using regular expression matching
         final_template_str = re.sub(r'{{problem}}', '{problem}', modified_template_str)
         final_template_str = re.sub(r'{{betti_number}}', '{betti_number}', final_template_str)
 
-        # 创建 ChatPromptTemplate 对象
+        # Create a ChatPromptTemplate object
         template_obj = ChatPromptTemplate.from_template(final_template_str)
         return template_obj
 
