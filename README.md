@@ -12,7 +12,7 @@ This project is the code implementation for the paper Syzygy of Thoughts: Enhanc
 
 
 
-<div align='left'>
+<div align='center'>
 <img src="assets/Snipaste_2025-04-13_18-40-03.png" alt="teaser" width="900" />
 </div>
 
