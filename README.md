@@ -13,13 +13,8 @@ This project is the code implementation for the paper Syzygy of Thoughts: Enhanc
 
 
 <div align='center'>
-<img src="assets/Snipaste_2025-04-13_18-40-03.png" alt="teaser" width="900" />
+<img src="assets/Snipaste_2025-04-13_18-40-03.png" alt="teaser" width="850" />
 </div>
-
-
-
-
-
 
 ## what's new
 ### 1. ACM MM Submission & arXiv Preprint 📄
