@@ -11,12 +11,25 @@ This project is the code implementation for the paper Syzygy of Thoughts: Enhanc
 </div>
 
 
+
+
+
+
 ## what's new
 ### 1. ACM MM Submission & arXiv Preprint
 We are excited to announce that our paper, Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution, has been submitted to the ACM Multimedia Conference (ACM MM) for review. Additionally, the arXiv preprint of the paper will be available soon for broader accessibility to the research community.
 
 ### 2. Brand New DIY CoT Chain of Thought Template Feature
-We've introduced an exciting new feature—DIY CoT Chain of Thought Templates! Now, you can not only use our provided standard templates but also create your own unique CoT chains tailored to your needs. Whether it’s a reasoning chain for specific tasks or an innovative thought structure design, you have the freedom to adjust and optimize it. This allows the reasoning process to better fit your actual use case. Unleash your creativity and craft your very own CoT, enhancing the efficiency and intelligence of your reasoning experience!
+<div class="diy-feature">
+  <p>
+    We've introduced an exciting new feature—DIY CoT Chain of Thought Templates! Now, you can not only use our provided standard templates but also create your own unique CoT chains tailored to your needs. Whether it’s a reasoning chain for specific tasks or an innovative thought structure design, you have the freedom to adjust and optimize it. This allows the reasoning process to better fit your actual use case. Unleash your creativity and craft your very own CoT, enhancing the efficiency and intelligence of your reasoning experience!
+  </p>
+  
+  <!-- Button to scroll to the DIY section -->
+  <a href="#diy-section" class="jump-button">Explore DIY CoT Templates</a>
+</div>
+
+
 
 
 
@@ -190,6 +203,16 @@ The following table compares the performance of CoT, CoT-SC (n=5), and SoT acros
 | CoT                                | 83.2%     | 79.0%     | 90.4%          | 97.7%     | 68.9%    | 68.1%    | 64.6%   | 77.7%    | 49.0%      |
 | CoT-SC (n=5)                       | 86.1%     | 81.0%     | 93.3%          | 98.0%     | 71.7%    | 70.6%    | 66.7%   | 80.2%    | 52.2%      |
 | **SoT (Ours)**                     | **92.1%** | **92.5%** | **96.1%**      | **99.2%** | **77.2%** | **72.3%** | **69.1%** | **82.5%** | **55.0%**  |
+
+
+<!-- The DIY Section in your page -->
+<div id="diy-section" class="diy-section">
+  <h2>DIY CoT Templates</h2>
+  <p>Here, you can find detailed information on how to create and customize your own CoT templates...</p>
+</div>
+
+
+
 
 
 
