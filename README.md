@@ -16,7 +16,7 @@ This project is the code implementation for the paper Syzygy of Thoughts: Enhanc
 
 
 ## what's new
-### 1. ACM MM Submission & arXiv Preprint
+### 1. ACM MM Submission & arXiv Preprint 📄
 We are excited to announce that our paper, Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution, has been submitted to the ACM Multimedia Conference (ACM MM) for review. Additionally, the arXiv preprint of the paper will be available soon for broader accessibility to the research community.
 
 ### 2. Brand New DIY CoT Chain of Thought Template Feature 🌟
