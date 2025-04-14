@@ -1,7 +1,13 @@
 # Syzygy-of-Thoughts 👋 
-<div align='center'>
-<img src="assets/Syzygy.png" alt="teaser" width="1600" />
-</div>
+
+<html>
+<body>
+    <div align="center">
+        <img src="assets/Syzygy.png" alt="teaser">
+        <p>"Syzygy" is derived from the Greek word syzygia (συσυγία), meaning "union" or "pairing."</p>
+    </div>
+</body>
+</html>
 
 <div align="center">
     <a href="https://translate.google.com"><img src="https://img.shields.io/badge/arXiv-2025-b31b1b" alt="Paper"></a>
