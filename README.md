@@ -185,8 +185,7 @@ The variation of the temperature parameter in Large Language Models (LLMs) signi
 
 <div style="display: flex; justify-content: space-around; gap: 20px;">
   <div style="display: flex; justify-content: space-around; width: 45%;">
-    <img src="assets/rader.png" alt="图片1" style="width: 45%;">
-    <img src="assets/plot2.png" alt="图片2" style="width: 45%;; height: 270px;">
+    <img src="assets/rader.png" alt="图片3" style="width: 45%; height: 400px;">
   </div>
 </div>
 
