@@ -174,8 +174,8 @@ After obtaining your API key, you can configure it in the project to enable the 
 
 <div style="display: flex; justify-content: space-around; gap: 20px; width: 100%; flex-wrap: wrap;">
   <div style="display: flex; justify-content: space-around; gap: 10px; width: 45%; min-width: 300px;">
-    <img src="assets/plot1.png" alt="图片1" style="width: 45%; height: auto; object-fit: contain;">
-    <img src="assets/box.png" alt="图片2" style="width: 45%; height: 270px; object-fit: contain;">
+    <img src="assets/plot1.png" alt="图片1" style="width: 35%; height: auto; object-fit: contain;">
+    <img src="assets/box.png" alt="图片2" style="width: 35%; height: auto; object-fit: contain;">
   </div>
 </div>
 
@@ -185,7 +185,7 @@ The variation of the temperature parameter in Large Language Models (LLMs) signi
 
 <div style="display: flex; justify-content: space-around; gap: 20px; width: 100%; flex-wrap: wrap;">
   <div style="display: flex; justify-content: center; width: 45%; min-width: 300px;">
-    <img src="assets/rader.png" alt="图片3" style="width: 45%; height: 400px; object-fit: contain;">
+    <img src="assets/rader.png" alt="图片3" style="width: 35%; height: auto; object-fit: contain;">
   </div>
 </div>
 
