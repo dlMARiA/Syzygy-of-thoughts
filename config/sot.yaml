@@ -6,7 +6,7 @@ openai:
   max_retries: 3
   temperature: 0
 runner:
-  default_dataset: D:\pycharmcode\langchian_new\datasets\gsm8k\test.jsonl
+  default_dataset: datasets/gsm8k/test.jsonl
   default_dataset_type: gsm8k
   default_method: sot
   default_betti_number: 10
