@@ -4,7 +4,7 @@
 <body>
     <div align="center">
         <img src="assets/Syzygy.png" alt="teaser">
-        <p>"Syzygy" is derived from the Greek word syzygia (συσυγία), meaning "union" or "pairing."</p>
+        <p><b><i style="font-family: 'Times New Roman', Times, serif;">"Syzygy" is derived from the Greek word syzygia (συσυγία), meaning "union" or "pairing."</i></b></p>
     </div>
 </body>
 </html>
