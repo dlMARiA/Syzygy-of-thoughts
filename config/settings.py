@@ -1,7 +1,7 @@
 import os
 import yaml
 
-# 读取 sot.yaml 文件
+# Read the sot.yaml file
 config_path = os.path.join(os.path.dirname(__file__), 'sot.yaml')
 with open(config_path, 'r', encoding='utf-8') as f:
     config = yaml.safe_load(f)
@@ -15,7 +15,7 @@ class Settings:
     MAX_RETRIES = config['openai']['max_retries']
     TEMPERATURE = None
     RUNNER_DEFAULT_DATASET = config['runner']['default_dataset']
-    # 将默认数据集类型转换为小写
+    # Convert the default dataset type to lowercase
     RUNNER_DEFAULT_DATASET_TYPE = config['runner']['default_dataset_type'].lower()
     RUNNER_DEFAULT_METHOD = config['runner']['default_method']
     RUNNER_DEFAULT_BETTI_NUMBER = config['runner']['default_betti_number']
@@ -26,7 +26,7 @@ class Settings:
 
     @classmethod
     def dynamic_max_tokens(cls, question: str) -> int:
-        """按问题长度动态计算最大令牌数"""
+        """Dynamically calculate the maximum number of tokens based on question length"""
         base_length = 512
         question_length = len(question.split())
         return min(base_length + question_length * 2, 4096)
