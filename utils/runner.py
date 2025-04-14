@@ -23,7 +23,7 @@ class Runner:
         try:
             settings.set_temperature(temperature)
             # Print current temperature
-            logger.info(f"Current temperature: {settings.TEMPERATURE}")
+            # logger.debug(f"Current temperature: {settings.TEMPERATURE}")
 
             # Initialize the model
             llm = initialize_llm()

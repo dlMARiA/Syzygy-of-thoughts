@@ -38,7 +38,7 @@ def modify_sot_template(template):
         return template_obj
 
     except json.JSONDecodeError:
-        logger.error("Failed to parse the template as JSON.")
+        # logger.error("Failed to parse the template as JSON.")
         return None
 
 

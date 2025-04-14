@@ -46,9 +46,11 @@ class DatasetLoader(DatasetLoaderInterface):
                         item["solution"] = item.get("answer", "")
                         dataset.append(item)
                     except json.JSONDecodeError as e:
-                        logger.error(f"Failed to parse JSON line: {str(e)}, line content: {line[:100]}...")
+                        # logger.error(f"Failed to parse JSON line: {str(e)}, line content: {line[:100]}...")
+                        pass
         except Exception as e:
-            logger.error(f"Failed to load dataset: {str(e)}")
+            # logger.error(f"Failed to load dataset: {str(e)}")
+            pass
         return dataset
 
     def load_dataset(self, file_path: str, dataset_type: str) -> list:
