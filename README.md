@@ -1,7 +1,13 @@
 # Syzygy-of-Thoughts 👋 
-<div align='center'>
-<img src="assets/Syzygy.png" alt="teaser" width="1600" />
-</div>
+
+<html>
+<body>
+    <div align="center">
+        <img src="assets/Syzygy.png" alt="teaser">
+        <p><b><i style="font-family: 'Times New Roman', Times, serif;">"Syzygy" is derived from the Greek word syzygia (συσυγία), meaning "union" or "pairing."</i></b></p>
+    </div>
+</body>
+</html>
 
 <div align="center">
     <a href="https://translate.google.com"><img src="https://img.shields.io/badge/arXiv-2025-b31b1b" alt="Paper"></a>
@@ -16,7 +22,7 @@ This project is the code implementation for the paper Syzygy of Thoughts: Enhanc
 <img src="assets/Snipaste_2025-04-13_18-40-03.png" alt="teaser" width="850" />
 </div>
 
-## what's new
+## 📰 what's new
 ### 1. ACM MM Submission & arXiv Preprint 📄
 We are excited to announce that our paper, Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution, has been submitted to the ACM Multimedia Conference (ACM MM) for review. Additionally, the arXiv preprint of the paper will be available soon for broader accessibility to the research community.
 
@@ -229,7 +235,7 @@ The following table compares the performance of CoT, CoT-SC (n=5), and SoT acros
 
 
 
-## Citation
+## 📝 Citation
 If you find SoT useful to your research, please cite our work as an acknowledgment.(*^▽^*)
 ```bib
 
