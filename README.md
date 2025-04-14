@@ -172,10 +172,10 @@ After obtaining your API key, you can configure it in the project to enable the 
 ## experiment
 ### 1. Experimental Performance
 
-<div style="display: flex; justify-content: space-around; gap: 20px;">
-  <div style="display: flex; justify-content: space-around; width: 45%;">
-    <img src="assets/plot1.png" alt="图片1" style="width: 45%;">
-    <img src="assets/box.png" alt="图片2" style="width: 45%;; height: 270px;">
+<div style="display: flex; justify-content: space-around; gap: 20px; width: 100%; flex-wrap: wrap;">
+  <div style="display: flex; justify-content: space-around; gap: 10px; width: 45%; min-width: 300px;">
+    <img src="assets/plot1.png" alt="图片1" style="width: 45%; height: auto; object-fit: contain;">
+    <img src="assets/box.png" alt="图片2" style="width: 45%; height: 270px; object-fit: contain;">
   </div>
 </div>
 
@@ -183,9 +183,9 @@ After obtaining your API key, you can configure it in the project to enable the 
 The variation of the temperature parameter in Large Language Models (LLMs) significantly influences their reasoning performance. Temperature adjustment directly impacts the diversity of the generated content; lower temperatures tend to yield more conservative and deterministic outputs, whereas higher temperatures increase the stochasticity and diversity of the generated text. The accompanying figure illustrates the robust stability demonstrated by the State-of-the-Art (SoTA) model across a range of temperature settings.
 
 
-<div style="display: flex; justify-content: space-around; gap: 20px;">
-  <div style="display: flex; justify-content: space-around; width: 45%;">
-    <img src="assets/rader.png" alt="图片3" style="width: 45%; height: 400px;">
+<div style="display: flex; justify-content: space-around; gap: 20px; width: 100%; flex-wrap: wrap;">
+  <div style="display: flex; justify-content: center; width: 45%; min-width: 300px;">
+    <img src="assets/rader.png" alt="图片3" style="width: 45%; height: 400px; object-fit: contain;">
   </div>
 </div>
 
