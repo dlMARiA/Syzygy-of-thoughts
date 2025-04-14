@@ -1,7 +1,4 @@
 # Syzygy-of-Thoughts
-<div align='center'>
-<img src="assets/logo.png" alt="teaser" width="1200" />
-</div>
 <p align="center">
  <img width="100px" src="https://github.githubassets.com/images/mona-loading-default.gif" align="center" alt="Logo" />
  <h3 align="center">"Syzygy" is derived from the Greek word syzygia (συσυγία), meaning "union" or "pairing".</h3>
@@ -12,7 +9,6 @@
     <a href="https://github.com/dlMARiA/Syzygy-of-thoughts"> <img alt="License" src="https://img.shields.io/github/license/xinzhel/llm-agent-survey?color=green"> </a>
 </div>
 This project is the code implementation for the paper Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution. The paper proposes a novel reasoning framework, Syzygy of Thoughts (SoT), which integrates principles from commutative algebra and homological algebra, specifically Minimal Free Resolution (MFR), into the Chain of Thought (CoT) approach, significantly improving the performance of large language models (LLMs) on complex reasoning tasks.
-
 
 
 
@@ -175,23 +171,27 @@ After obtaining your API key, you can configure it in the project to enable the 
 ## experiment
 ### 1. Experimental Performance
 
-<div style="display: flex; justify-content: space-around;">
-  <img src="assets/plot1.png" alt="图片1" style="width: 45%;">
-  <img src="assets/plot2.png" alt="图片2" style="width: 45%;">
-  <img src="assets/bettiablation.png" alt="图片2" style="width: 45%;">
+<div style="display: flex; justify-content: space-around; gap: 20px;">
+  <div style="display: flex; justify-content: space-around; width: 45%;">
+    <img src="assets/plot1.png" alt="图片1" style="width: 45%;">
+    <img src="assets/box.png" alt="图片2" style="width: 45%;; height: 270px;">
+  </div>
+</div>
+
+**Stability:**
+The variation of the temperature parameter in Large Language Models (LLMs) significantly influences their reasoning performance. Temperature adjustment directly impacts the diversity of the generated content; lower temperatures tend to yield more conservative and deterministic outputs, whereas higher temperatures increase the stochasticity and diversity of the generated text. The accompanying figure illustrates the robust stability demonstrated by the State-of-the-Art (SoTA) model across a range of temperature settings.
+
+
+<div style="display: flex; justify-content: space-around; gap: 20px;">
+  <div style="display: flex; justify-content: space-around; width: 45%;">
+    <img src="assets/rader.png" alt="图片1" style="width: 45%;">
+    <img src="assets/plot2.png" alt="图片2" style="width: 45%;; height: 270px;">
+  </div>
 </div>
 
 
-
-<div align='left'>
-<img src="assets/rader.png" alt="teaser" width="400" />
-</div>
-
-
-SoT (Ours) achieved performance improvements
-compared to CoT and CoT-SC on two models across nine
-datasets. The inner circle shows three methods of Qwen2.5,
-while the outer circle shows three methods of 4o-mini.
+**Accuracy:**
+SoT (Ours) achieved performance improvements compared to CoT and CoT-SC on two models across nine datasets. The inner circle shows three methods of Qwen2.5,while the outer circle shows three methods of 4o-mini.
 
 ### 2. Experimental Results
 The following table compares the performance of CoT, CoT-SC (n=5), and SoT across various tasks, covering mathematical reasoning (GSM8K, SVAMP, MultiArith, ASDiv, AQUA), general knowledge (MMLU), multi-task question answering (BBH), time reasoning (Date), and logical reasoning (CLUTRR). SoT achieves the best performance across all models and tasks.
