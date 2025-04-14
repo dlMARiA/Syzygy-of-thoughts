@@ -19,14 +19,13 @@ This project is the code implementation for the paper Syzygy of Thoughts: Enhanc
 ### 1. ACM MM Submission & arXiv Preprint
 We are excited to announce that our paper, Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution, has been submitted to the ACM Multimedia Conference (ACM MM) for review. Additionally, the arXiv preprint of the paper will be available soon for broader accessibility to the research community.
 
-### 2. Brand New DIY CoT Chain of Thought Template Feature
+### 2. Brand New DIY CoT Chain of Thought Template Feature 🛠
 <div class="diy-feature">
   <p>
     We've introduced an exciting new feature—DIY CoT Chain of Thought Templates! Now, you can not only use our provided standard templates but also create your own unique CoT chains tailored to your needs. Whether it’s a reasoning chain for specific tasks or an innovative thought structure design, you have the freedom to adjust and optimize it. This allows the reasoning process to better fit your actual use case. Unleash your creativity and craft your very own CoT, enhancing the efficiency and intelligence of your reasoning experience!
   </p>
-  
   <!-- Button to scroll to the DIY section -->
-  <a href="#diy-section" class="jump-button">Explore DIY CoT Templates</a>
+  <a href="#diy-section" class="jump-button">Explore DIY CoT Templates</a>👈
 </div>
 
 
