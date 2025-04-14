@@ -1,4 +1,4 @@
-# Syzygy-of-Thoughts
+# Syzygy-of-Thoughts 👋 
 <div align='center'>
 <img src="assets/Syzygy.png" alt="teaser" width="1600" />
 </div>
