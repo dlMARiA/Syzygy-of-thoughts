@@ -1,4 +1,8 @@
 # Syzygy-of-Thoughts
+<div align='center'>
+<img src="assets/logo.png" alt="teaser" width="850" />
+</div>
+
 <p align="center">
  <img width="100px" src="https://github.githubassets.com/images/mona-loading-default.gif" align="center" alt="Logo" />
  <h3 align="center">"Syzygy" is derived from the Greek word syzygia (συσυγία), meaning "union" or "pairing".</h3>
