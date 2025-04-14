@@ -3,12 +3,17 @@
  <img width="100px" src="https://github.githubassets.com/images/mona-loading-default.gif" align="center" alt="Logo" />
  <h3 align="center">"Syzygy" is derived from the Greek word syzygia (συσυγία), meaning "union" or "pairing".</h3>
 </p>
+
+<div align='center'>
+<img src="assets/Syzygy.png" alt="teaser" width="850" />
+</div>
 <div align="center">
     <a href="https://translate.google.com"><img src="https://img.shields.io/badge/CoLing-2025-b31b1b" alt="Paper"></a>
     <a href="https://github.com/dlMARiA/Syzygy-of-thoughts"><img src="https://img.shields.io/github/last-commit/xinzhel/llm-agent-survey?color=blue" alt="Github"></a>
     <a href="https://github.com/dlMARiA/Syzygy-of-thoughts"> <img alt="License" src="https://img.shields.io/github/license/xinzhel/llm-agent-survey?color=green"> </a>
 </div>
 This project is the code implementation for the paper Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution. The paper proposes a novel reasoning framework, Syzygy of Thoughts (SoT), which integrates principles from commutative algebra and homological algebra, specifically Minimal Free Resolution (MFR), into the Chain of Thought (CoT) approach, significantly improving the performance of large language models (LLMs) on complex reasoning tasks.
+
 
 
 
