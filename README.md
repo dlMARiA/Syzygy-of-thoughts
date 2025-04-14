@@ -24,10 +24,10 @@ We are excited to announce that our paper, Syzygy of Thoughts: Enhancing LLM Rea
 ### 2. Brand New DIY CoT Chain of Thought Template Feature 🌟
 <div class="diy-feature">
   <p>
-    We've introduced an exciting new feature—DIY CoT Chain of Thought Templates! Now, you can not only use our provided standard templates but also create your own unique CoT chains tailored to your needs. Whether it’s a reasoning chain for specific tasks or an innovative thought structure design, you have the freedom to adjust and optimize it. This allows the reasoning process to better fit your actual use case. Unleash your creativity and craft your very own CoT, enhancing the efficiency and intelligence of your reasoning experience!
+    We've introduced an exciting new feature—DIY Modules! Now, you can not only use our provided standard templates but also create your own unique DIY Modules tailored to your needs. Whether it’s a reasoning chain for specific tasks or an innovative thought structure design, you have the freedom to adjust and optimize it. This allows the reasoning process to better fit your actual use case. Unleash your creativity and craft your very own DIY Module, enhancing the efficiency and intelligence of your reasoning experience!
   </p>
   <!-- Button to scroll to the DIY section -->
-  <a href="#diy-section" class="jump-button">Explore DIY CoT Templates</a>👈
+  <a href="#diy-section" class="jump-button">Explore DIY Module</a>👈
 </div>
 
 
@@ -221,7 +221,7 @@ The following table compares the performance of CoT, CoT-SC (n=5), and SoT acros
 
 <!-- The DIY Section in your page -->
 <div id="diy-section" class="diy-section">
-  <h2>DIY CoT Templates</h2>
+  <h2>DIY Module</h2>
   <p>Here, you can find detailed information on how to create and customize your own CoT templates...</p>
 </div>
 
