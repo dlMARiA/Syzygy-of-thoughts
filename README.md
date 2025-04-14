@@ -11,6 +11,13 @@ This project is the code implementation for the paper Syzygy of Thoughts: Enhanc
 </div>
 
 
+## what's new
+### 1
+
+
+
+
+
 ## Project Structure
 
 This project implements the SoT reasoning framework from the Syzygy of Thoughts paper, including datasets, model configurations, source code, and experimental results. The project directory structure is as follows:
