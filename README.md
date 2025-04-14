@@ -1,6 +1,6 @@
 # Syzygy-of-Thoughts
 <div align='center'>
-<img src="assets/Syzygy.png" alt="teaser" width="1600" />
+<img src="assets/Syzygy1.png" alt="teaser" width="1600" />
 </div>
 
 <p align="center">
