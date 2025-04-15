@@ -22,6 +22,21 @@ logger = Logger().get_logger()
 
 
 def modify_sot_template(template):
+    """
+    Modifies a given template string by converting JSON placeholders and formatting it
+    to be compatible with a specific prompt template structure.
+
+    The function takes a JSON-like string as input, converts it into a structured dictionary,
+    adjusts the formatting of placeholders, and then transforms it into a ChatPromptTemplate object.
+
+    Args:
+        template (str): A JSON-like string representing the template to modify.
+
+    Returns:
+        ChatPromptTemplate or None: Returns a ChatPromptTemplate object with the modified
+        template if successful. If the template cannot be parsed as JSON, the function
+        returns None.
+    """
     try:
         # Parse template as dictionary
         template_dict = json.loads(template)
@@ -43,10 +58,39 @@ def modify_sot_template(template):
 
 
 class PromptTemplateFactory(PromptTemplateFactoryInterface):
+    """
+    Represents a factory for generating prompt templates based on method type, dataset,
+    and additional parameters.
+
+    This class is designed to create prompt templates by allowing dynamic imports and
+    template fetching based on a defined mapping. Specifically, it handles "sot" method
+    type templates and modifies them accordingly before returning. The class also manages
+    invalid method types by logging an error and returning a fallback result.
+
+    Attributes:
+        sot_dataset_mapping (dict): A mapping configuration defining the relationship
+            between dataset types and their corresponding prompt template function paths.
+    """
     def __init__(self):
         self.sot_dataset_mapping = settings.PROMPT_TEMPLATE_MAPPING
 
     def get_prompt_template(self, method: str, dataset_type: str, betti_number: int, solution_number: int):
+        """
+        Retrieves and modifies a prompt template based on the specified method, dataset type,
+        Betti number, and solution number. The function dynamically imports the template
+        generation function based on the dataset type, then applies modifications to the
+        retrieved template. Currently, only the 'sot' method type is supported.
+
+        Args:
+            method (str): Specifies the method type for generating the template. Only supports 'sot'.
+            dataset_type (str): The type of dataset used to determine the template generation method.
+            betti_number (int): The Betti number to be used in the template generation.
+            solution_number (int): The solution number to be used in the template generation.
+
+        Returns:
+            str or None: Modified prompt template if successful, or None if the method type
+            is unsupported or an error occurs.
+        """
         if method == 'sot':
             template_path = self.sot_dataset_mapping.get(dataset_type)
             if template_path:

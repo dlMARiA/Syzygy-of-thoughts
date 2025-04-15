@@ -16,6 +16,15 @@ class SOTTemplate:
         self.final_answer_format = ""
 
     def get_template(self):
+        """
+        Generates a formatted template string based on the specified conditions, solutions, and analysis
+        properties. The template includes details such as the analysis module, Betti numbers, free
+        conditions, mappings, minimality analysis, and the final answer format, and structures this
+        information in JSON-like formatting.
+
+        Returns:
+            str: A formatted string representing the template with all embedded data.
+        """
         free_conditions = {
             **{"\"auxiliary_condition\"": self.auxiliary_condition},
             **self.free_conditions_base

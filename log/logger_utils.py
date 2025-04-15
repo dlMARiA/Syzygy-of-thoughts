@@ -10,6 +10,14 @@ class Logger:
         return cls._instance
 
     def setup_logging(self):
+        """
+        Sets up logging for the application.
+
+        Attributes:
+            logger (logging.Logger): The logger instance used to log messages from the
+                application. Configured with file and stream handlers for logging.
+
+        """
         self.logger = logging.getLogger(__name__)
         # Set the log level to INFO
         self.logger.setLevel(logging.INFO)

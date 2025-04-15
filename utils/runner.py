@@ -10,6 +10,21 @@ logger = Logger().get_logger()
 
 
 class Runner:
+    """
+    Class responsible for orchestrating the process of running a model evaluation pipeline.
+
+    The Runner class integrates components for generating prompts, loading datasets, and interacting
+    with a language model to evaluate its performance. It processes datasets by applying specific
+    evaluation methods, invokes the language model to generate predictions, and validates the results
+    against ground truths. Additionally, the class supports generating a detailed test report including
+    metrics such as accuracy.
+
+    Attributes:
+        prompt_factory (PromptTemplateFactoryInterface): The factory responsible for providing
+            prompt templates based on required criteria such as method and dataset type.
+        dataset_loader (DatasetLoaderInterface): The loader responsible for importing datasets from
+            specified paths for evaluation purposes.
+    """
     def __init__(self, prompt_factory: PromptTemplateFactoryInterface, dataset_loader: DatasetLoaderInterface):
         self.prompt_factory = prompt_factory
         self.dataset_loader = dataset_loader
@@ -20,6 +35,22 @@ class Runner:
             betti_number: int = settings.RUNNER_DEFAULT_BETTI_NUMBER,
             solution_number: int = settings.RUNNER_DEFAULT_SOLUTION_NUMBER,
             temperature: float = settings.TEMPERATURE):
+        """
+        Executes the main functionality to analyze a dataset using a specified method and configuration.
+
+        The method performs analysis on the input dataset by loading it, applying a processing chain, and
+        validating the results obtained from a machine learning model. The accuracy and incorrect cases
+        are reported at the end.
+
+        Args:
+            dataset_path: The file path to the dataset to be processed.
+            dataset_type: Specifies the type or format of the dataset (e.g., 'aqua').
+            method: The method to be used for prompt generation and processing.
+            betti_number: A critical parameter influencing the analysis based on topological characteristics.
+            solution_number: The identifier for selecting the specific solution from the dataset.
+            temperature: The temperature setting for the machine learning model influencing its response creativity.
+
+        """
         try:
             settings.set_temperature(temperature)
             # Print current temperature

@@ -3,11 +3,37 @@ import json
 from utils.parse_factory import AQUAParser  # Import the AQUAParser class
 
 def clean_number_string(num_str):
+    """
+    Cleans a given numeric string by removing all characters that are not digits,
+    symbols, decimal points, commas, or the hash (#) symbol. The cleaning process
+    ensures that only valid numeric-related characters are retained, making the
+    string suitable for further processing or validation.
+
+    Args:
+        num_str: A string potentially containing a numeric value with various
+            characters that need to be filtered.
+
+    Returns:
+        A string containing only the retained numeric-related characters after
+        the cleaning process.
+    """
     # Remove all non-digits, non-symbols, non-decimal points, non-commas, and non-# characters
     cleaned = re.sub(r'[^0-9eE\+\-\.,%#]', '', num_str.strip())
     return cleaned
 
 def convert_to_standard(num_str):
+    """
+    Converts a numeric string to its standard representation. The function processes strings
+    that may contain numbers in scientific notation, integers, or floating-point formats. It
+    also handles empty strings and invalid inputs gracefully, returning "0" in such cases.
+
+    Args:
+        num_str (str): The numeric string to be converted to its standard representation.
+
+    Returns:
+        str: The converted standard representation of the numeric string. Returns "0" for
+        empty or invalid inputs.
+    """
     try:
         num_str = num_str.strip()
         # Handling empty strings
@@ -24,9 +50,15 @@ def convert_to_standard(num_str):
 
 def parse_llm_answer(filled_template):
     """
-    Parse the template returned by LLM and extract the answer
-    :param filled_template: LLM filled template
-    :return: Analyzed answer
+    Parses the LLM-generated answer from a filled template string to extract the desired
+    information such as dates, numbers, or other patterns.
+
+    Args:
+        filled_template (str): The template string containing the LLM answer to parse.
+
+    Returns:
+        str: A formatted string representing the extracted answer, based on the detected
+        patterns in the input. Defaults to "0" if unable to process the input correctly.
     """
     try:
         # Basic cleaning
@@ -98,6 +130,20 @@ def parse_llm_answer(filled_template):
         return "0"
 
 def parse_clutrr_answer(raw_answer):
+    """
+    Parses the provided raw answer string, extracting the first occurrence 
+    of an alphabetic sequence. Supports specific formatting with delimiter 
+    and fallback for directly extracting sequences.
+
+    Args:
+        raw_answer: str
+            The raw input string, potentially containing a formatted answer 
+            with a '####' delimiter or alphabetic sequences to be parsed.
+
+    Returns:
+        str: The extracted alphabetic sequence if found, otherwise returns 
+        the raw input string unchanged.
+    """
     parts = raw_answer.split('####')
     if len(parts) > 1:
         answer_str = parts[1].strip()
@@ -111,6 +157,18 @@ def parse_clutrr_answer(raw_answer):
         return raw_answer
 
 def parse_gsm8k_answer(raw_answer):
+    """
+    Parses an answer from the GSM8K dataset format. This function extracts a properly formatted
+    answer from the input string using specified patterns. It checks for exact matches based on 
+    a regex pattern and provides a fallback mechanism to clean and convert the raw input.
+
+    Args:
+        raw_answer (str): The raw input string containing the answer to be extracted and processed.
+
+    Returns:
+        str: A formatted and standardized answer string. If no exact match is found via the 
+        regex pattern, the function attempts to clean and standardize the input.
+    """
     match = re.search(r'####\s*(\d+)', raw_answer)
     if match:
         return match.group(1)
@@ -118,6 +176,22 @@ def parse_gsm8k_answer(raw_answer):
     return convert_to_standard(num_str)
 
 def parse_math_answer(raw_answer):
+    """
+    Parses a given raw mathematics answer for a numerical value enclosed in a LaTeX \boxed{}
+    expression and converts it to a standard numerical format.
+
+    The function attempts to locate and extract a number enclosed in a \boxed{} LaTeX expression.
+    If no such expression is found in the input, it falls back on cleaning and parsing the raw
+    input as a numerical string. Once extracted, the numerical string is converted and returned
+    in a standard numerical format.
+
+    Args:
+        raw_answer (str): A string representation of a raw answer, which may include LaTeX \boxed{}
+            notations or a numerical representation.
+
+    Returns:
+        float: The numerical value extracted and converted from the raw answer.
+    """
     match = re.search(r'\\boxed{([+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)', raw_answer)
     if match:
         num_str = match.group(1)
@@ -139,6 +213,22 @@ dataset_parsers = {
 }
 
 def parse_dataset_answer(raw_answer, dataset_type):
+    """
+    Parses the raw dataset answer based on the provided dataset type. The function
+    utilizes a dictionary of dataset parsers to dynamically invoke the appropriate
+    parser function based on the case-insensitive match to the dataset type. If no
+    matching parser is found, the raw answer is returned, and a message is printed
+    indicating the unsupported dataset type.
+
+    Args:
+        raw_answer: The raw answer data to be parsed.
+        dataset_type: The type of the dataset as a string. It determines which
+            parser function to invoke.
+
+    Returns:
+        The parsed answer if a matching parser is found; otherwise, the raw answer
+        is returned unchanged.
+    """
     # Convert to uppercase for matching
     dataset_type = dataset_type.upper()
     for key in dataset_parsers.keys():
@@ -148,6 +238,20 @@ def parse_dataset_answer(raw_answer, dataset_type):
     return raw_answer
 
 def parse_aqua_jsonl(file_path):
+    """
+    Parses a JSONL file containing AQUA dataset answers, processes each line to extract the final answer, and
+    converts raw answers into the desired format.
+
+    Args:
+        file_path (str): Path to the JSONL file containing AQUA dataset answers.
+
+    Returns:
+        list: A list containing parsed answers, where each answer is processed into the required format.
+
+    Raises:
+        FileNotFoundError: If the specified file path does not exist or cannot be opened.
+        json.JSONDecodeError: If a line in the file is not a valid JSON object.
+    """
     parsed_answers = []
     with open(file_path, 'r', encoding='utf-8') as file:
         for line in file:

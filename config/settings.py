@@ -8,6 +8,12 @@ with open(config_path, 'r', encoding='utf-8') as f:
 
 
 class Settings:
+    """
+    Encapsulates application settings and configurations, including OpenAI API
+    settings, runner defaults, and mappings for dataset loaders, prompt templates,
+    and answer parsers. Class methods allow for calculation and adjustment of
+    specific settings dynamically.
+    """
     OPENAI_API_KEY = config['openai']['api_key']
     MODEL_NAME = config['openai']['model_name']
     BASE_URL = config['openai']['base_url']
@@ -26,13 +32,19 @@ class Settings:
 
     @classmethod
     def dynamic_max_tokens(cls, question: str) -> int:
-        """Dynamically calculate the maximum number of tokens based on question length"""
+        """
+        Dynamically calculate the maximum number of tokens based on question length
+        """
         base_length = 512
         question_length = len(question.split())
         return min(base_length + question_length * 2, 4096)
 
     @classmethod
     def set_temperature(cls, temperature: float):
+        """
+        Sets the class-level temperature to the specified value or to the default value
+        from the configuration if the provided value is None.
+        """
         cls.TEMPERATURE = temperature if temperature is not None else config['openai']['temperature']
 
 
