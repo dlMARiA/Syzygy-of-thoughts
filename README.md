@@ -45,27 +45,28 @@ This project implements the SoT reasoning framework from the Syzygy of Thoughts 
 
 ```plaintext
 project
-├── config              # Configuration files
-│   ├── sot.yaml        # SoT framework config (API keys, models, datasets)
-│   └── settings.py     # Parses sot.yaml and provides access methods
-├── interfaces          # Interface definitions
-│   └── __init__.py     # Initializes interfaces for module standardization
-├── models              # Model interfaces
-│   └── openai_client.py # Initializes and calls OpenAI model
-├── prompts             # Prompt templates
-│   └── sot_prompt.py   # SoT inference templates for different datasets
-├── utils               # Utility functions
-│   ├── dataloader.py   # Loads various datasets as per sot.yaml
-│   ├── parse_answer.py # Parses model answers for multiple dataset types
-│   ├── parse_factory.py # Converts raw answers to standard formats
-│   ├── answer_validator.py # Validates model output against expected answers
-│   ├── get_prompt_template.py # Retrieves and modifies prompt templates
-│   └── runner.py       # Coordinates experiment and generates reports
-├── log                 # Logging configuration
-│   └── logger_utils.py # Configures logging to file and console
-├── main.py             # Main entry point to start tests
-├── requirement.txt     # Lists project dependencies (langchain, openai, numpy)
-└── app.log             # Logs test info (start/end, dataset status, answers)
+├── config              # Directory for configuration files
+│   ├── sot.yaml        # Configuration for the SoT framework, including API keys, model details, and dataset paths
+│   └── settings.py     # Parses sot.yaml and provides methods to access the configuration
+├── datasets            # Directory for storing datasets
+├── interfaces          # Directory for interface definitions
+│   └── __init__.py     # Defines abstract interfaces to ensure standardization across modules
+├── log                 # Directory for logging configuration
+│   └── logger_utils.py # Configures logging to both files and the console
+├── models              # Directory for model interfaces
+│   └── openai_client.py # Initializes and calls the OpenAI model
+├── prompts             # Directory for prompt templates
+│   └── sot_prompt.py   # SoT inference prompt templates for different datasets
+├── utils               # Directory for utility functions
+│   ├── dataloader.py   # Loads different datasets according to the mapping in sot.yaml
+│   ├── parse_answer.py # Parses the model's answers, supporting multiple dataset types
+│   ├── parse_factory.py # Defines parsers for different datasets
+│   ├── answer_validator.py # Validates the model output against the expected answers
+│   ├── get_prompt_template.py # Retrieves prompt templates based on the dataset and method
+│   └── runner.py       # Coordinates the experiment process and generates test reports
+├── main.py             # Main entry point of the project, starts the testing process
+├── requirement.txt     # List of project dependencies, can be installed using `pip install -r`
+└── app.log             # Log file automatically generated after running the project locally, records test information
 ```
 
 
