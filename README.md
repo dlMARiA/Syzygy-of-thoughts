@@ -10,7 +10,7 @@
 </html>
 
 <div align="center">
-    <a href="https://translate.google.com"><img src="https://img.shields.io/badge/arXiv-2025-b31b1b" alt="Paper"></a>
+    <a href="https://arxiv.org/pdf/2504.09566"><img src="https://img.shields.io/badge/arXiv-2025-b31b1b" alt="Paper"></a>
     <a href="https://github.com/dlMARiA/Syzygy-of-thoughts"><img src="https://img.shields.io/github/last-commit/xinzhel/llm-agent-survey?color=blue" alt="Github"></a>
     <a href="https://github.com/dlMARiA/Syzygy-of-thoughts/blob/main/LICENSE"> <img alt="License" src="https://img.shields.io/github/license/xinzhel/llm-agent-survey?color=green"> </a>
 </div>
