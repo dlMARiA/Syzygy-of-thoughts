@@ -45,25 +45,27 @@ This project implements the SoT reasoning framework from the Syzygy of Thoughts 
 
 ```plaintext
 project
-├── config                       # Configuration files directory
-│   ├── sot.yaml                 # SoT framework configuration file
-│   └── settings.py              # Global project settings script
-├── interfaces                   # Interface definitions directory
-│   └── __init__.py              # Interface initialization file
-├── models                       # Model interfaces directory
-│   └── openai_client.py         # OpenAI model client implementation
-├── prompts                      # Prompt templates directory
-│   └── sot_prompt.py            # SoT inference prompt template
-├── utils                        # Utility functions directory
-│   ├── dataloader.py            # Data loading utilities
-│   ├── parse_answer.py          # Answer parsing function
-│   ├── parse_factory.py         # Answer parsing factory
-│   ├── answer_validator.py      # Answer validation utilities
-│   ├── get_prompt_template.py   # Prompt template retrieval function
-│   └── runner.py                # Experiment running script
-├── main.py                      # Main entry script of the project
-└── app.log                      # Project runtime log
-
+├── config              # Configuration files
+│   ├── sot.yaml        # SoT framework config (API keys, models, datasets)
+│   └── settings.py     # Parses sot.yaml and provides access methods
+├── interfaces          # Interface definitions
+│   └── __init__.py     # Initializes interfaces for module standardization
+├── models              # Model interfaces
+│   └── openai_client.py # Initializes and calls OpenAI model
+├── prompts             # Prompt templates
+│   └── sot_prompt.py   # SoT inference templates for different datasets
+├── utils               # Utility functions
+│   ├── dataloader.py   # Loads various datasets as per sot.yaml
+│   ├── parse_answer.py # Parses model answers for multiple dataset types
+│   ├── parse_factory.py # Converts raw answers to standard formats
+│   ├── answer_validator.py # Validates model output against expected answers
+│   ├── get_prompt_template.py # Retrieves and modifies prompt templates
+│   └── runner.py       # Coordinates experiment and generates reports
+├── log                 # Logging configuration
+│   └── logger_utils.py # Configures logging to file and console
+├── main.py             # Main entry point to start tests
+├── requirement.txt     # Lists project dependencies (langchain, openai, numpy)
+└── app.log             # Logs test info (start/end, dataset status, answers)
 ```
 
 
