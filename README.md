@@ -4,17 +4,17 @@
 <body>
     <div align="center">
         <img src="assets/Syzygy.png" alt="teaser">
-        <p><b><i style="font-family: 'Times New Roman', Times, serif;">"Syzygy" is derived from the Greek word syzygia (συσυγία), meaning "union" or "pairing."</i></b></p>
+        <p><b><i style="font-family: 'Times New Roman', Times, serif;">"Syzygy" is derived from the Greek word syzygia (συσυγία), meaning "union" or "pairing".</i></b></p>
     </div>
 </body>
 </html>
 
 <div align="center">
-    <a href="https://translate.google.com"><img src="https://img.shields.io/badge/arXiv-2025-b31b1b" alt="Paper"></a>
+    <a href="https://arxiv.org/pdf/2504.09566"><img src="https://img.shields.io/badge/arXiv-2025-b31b1b" alt="Paper"></a>
     <a href="https://github.com/dlMARiA/Syzygy-of-thoughts"><img src="https://img.shields.io/github/last-commit/xinzhel/llm-agent-survey?color=blue" alt="Github"></a>
     <a href="https://github.com/dlMARiA/Syzygy-of-thoughts/blob/main/LICENSE"> <img alt="License" src="https://img.shields.io/github/license/xinzhel/llm-agent-survey?color=green"> </a>
 </div>
-This project is the code implementation for the paper Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution. The paper proposes a novel reasoning framework, Syzygy of Thoughts (SoT), which integrates principles from commutative algebra and homological algebra, specifically Minimal Free Resolution (MFR), into the Chain of Thought (CoT) approach, significantly improving the performance of large language models (LLMs) on complex reasoning tasks.
+This project is the code implementation for the paper Syzygy of Thoughts: Improving LLM Reasoning with Minimal Free Resolution. The paper proposes a novel reasoning framework, Syzygy of Thoughts (SoT), which integrates principles from commutative algebra and homological algebra, specifically Minimal Free Resolution (MFR), into the Chain of Thought (CoT) approach, significantly improving the performance of large language models (LLMs) on complex reasoning tasks.
 
 
 
@@ -24,7 +24,7 @@ This project is the code implementation for the paper Syzygy of Thoughts: Enhanc
 
 ## 📰 what's new
 ### 1. ACM MM Submission & arXiv Preprint 📄
-We are excited to announce that our paper, Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution, has been submitted to the ACM Multimedia Conference (ACM MM) for review. Additionally, the arXiv preprint of the paper will be available soon for broader accessibility to the research community.
+We are excited to announce that our paper, Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution, has been submitted to the ACM Multimedia Conference (ACM MM) for review. Additionally, the arXiv preprint of the paper https://arxiv.org/abs/2504.09566.
 
 ### 2. Brand New DIY CoT Chain of Thought Template Feature 🌟
 <div class="diy-feature">
@@ -45,25 +45,28 @@ This project implements the SoT reasoning framework from the Syzygy of Thoughts 
 
 ```plaintext
 project
-├── config                       # Configuration files directory
-│   ├── sot.yaml                 # SoT framework configuration file
-│   └── settings.py              # Global project settings script
-├── interfaces                   # Interface definitions directory
-│   └── __init__.py              # Interface initialization file
-├── models                       # Model interfaces directory
-│   └── openai_client.py         # OpenAI model client implementation
-├── prompts                      # Prompt templates directory
-│   └── sot_prompt.py            # SoT inference prompt template
-├── utils                        # Utility functions directory
-│   ├── dataloader.py            # Data loading utilities
-│   ├── parse_answer.py          # Answer parsing function
-│   ├── parse_factory.py         # Answer parsing factory
-│   ├── answer_validator.py      # Answer validation utilities
-│   ├── get_prompt_template.py   # Prompt template retrieval function
-│   └── runner.py                # Experiment running script
-├── main.py                      # Main entry script of the project
-└── app.log                      # Project runtime log
-
+├── config              # Directory for configuration files
+│   ├── sot.yaml        # Configuration for the SoT framework, including API keys, model details, and dataset paths
+│   └── settings.py     # Parses sot.yaml and provides methods to access the configuration
+├── datasets            # Directory for storing datasets
+├── interfaces          # Directory for interface definitions
+│   └── __init__.py     # Defines abstract interfaces to ensure standardization across modules
+├── log                 # Directory for logging configuration
+│   └── logger_utils.py # Configures logging to both files and the console
+├── models              # Directory for model interfaces
+│   └── openai_client.py # Initializes and calls the OpenAI model
+├── prompts             # Directory for prompt templates
+│   └── sot_prompt.py   # SoT inference prompt templates for different datasets
+├── utils               # Directory for utility functions
+│   ├── dataloader.py   # Loads different datasets according to the mapping in sot.yaml
+│   ├── parse_answer.py # Parses the model's answers, supporting multiple dataset types
+│   ├── parse_factory.py # Defines parsers for different datasets
+│   ├── answer_validator.py # Validates the model output against the expected answers
+│   ├── get_prompt_template.py # Retrieves prompt templates based on the dataset and method
+│   └── runner.py       # Coordinates the experiment process and generates test reports
+├── main.py             # Main entry point of the project, starts the testing process
+├── requirement.txt     # List of project dependencies, can be installed using `pip install -r`
+└── app.log             # Log file automatically generated after running the project locally, records test information
 ```
 
 
