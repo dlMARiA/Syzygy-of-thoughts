@@ -1,7 +1,7 @@
 openai:
-  api_key:
+  api_key:  # For example, "sk-1234EXAMPLETOKEN5678FAKEKEYabcd"
   model_name: gpt-4o-mini
-  base_url:
+  base_url: # For example, "https://api.example.com/v1/"
   max_tokens: 2048
   max_retries: 3
   temperature: 0
