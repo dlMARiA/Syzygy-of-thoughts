@@ -1,52 +1,52 @@
 {"id": 0, "question": "Yesterday was April 30, 2021. What is the date today in MM/DD/YYYY?", "answer": " 05/01/2021"}
-{"id": 1, "question": "Yesterday was April 30, 2021. What is the date yesterday in MM/DD/YYYY?", "answer": " 04/30/2021"}
-{"id": 2, "question": "Yesterday was April 30, 2021. What is the date 10 days ago in MM/DD/YYYY?", "answer": " 04/21/2021"}
-{"id": 3, "question": "Yesterday was April 30, 2021. What is the date a month ago in MM/DD/YYYY?", "answer": " 04/01/2021"}
-{"id": 4, "question": "Yesterday was April 30, 2021. What is the date one year ago from today in MM/DD/YYYY?", "answer": " 05/01/2020"}
-{"id": 5, "question": "Yesterday was April 30, 2021. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 04/24/2021"}
-{"id": 6, "question": "Yesterday was April 30, 2021. What is the date one week from today in MM/DD/YYYY?", "answer": " 05/08/2021"}
-{"id": 7, "question": "Yesterday was April 30, 2021. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 05/02/2021"}
-{"id": 8, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date today in MM/DD/YYYY?", "answer": " 05/30/2021"}
-{"id": 9, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date tomorrow in MM/DD/YYYY?", "answer": " 05/31/2021"}
-{"id": 10, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date yesterday in MM/DD/YYYY?", "answer": " 05/29/2021"}
-{"id": 11, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date 10 days ago in MM/DD/YYYY?", "answer": " 05/20/2021"}
-{"id": 12, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date a month ago in MM/DD/YYYY?", "answer": " 04/30/2021"}
-{"id": 13, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one year ago from today in MM/DD/YYYY?", "answer": " 05/30/2020"}
-{"id": 14, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 05/23/2021"}
-{"id": 15, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one week from today in MM/DD/YYYY?", "answer": " 06/06/2021"}
-{"id": 16, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 05/31/2021"}
-{"id": 17, "question": "Tomorrow is 11/12/2019. What is the date today in MM/DD/YYYY?", "answer": " 11/11/2019"}
-{"id": 18, "question": "Tomorrow is 11/12/2019. What is the date tomorrow in MM/DD/YYYY?", "answer": " 11/12/2019"}
-{"id": 19, "question": "Tomorrow is 11/12/2019. What is the date yesterday in MM/DD/YYYY?", "answer": " 11/10/2019"}
-{"id": 20, "question": "Tomorrow is 11/12/2019. What is the date 10 days ago in MM/DD/YYYY?", "answer": " 11/01/2019"}
-{"id": 21, "question": "Tomorrow is 11/12/2019. What is the date a month ago in MM/DD/YYYY?", "answer": " 10/11/2019"}
-{"id": 22, "question": "Tomorrow is 11/12/2019. What is the date one year ago from today in MM/DD/YYYY?", "answer": " 11/11/2018"}
-{"id": 23, "question": "Tomorrow is 11/12/2019. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 11/04/2019"}
-{"id": 24, "question": "Tomorrow is 11/12/2019. What is the date one week from today in MM/DD/YYYY?", "answer": " 11/18/2019"}
-{"id": 25, "question": "Tomorrow is 11/12/2019. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 11/12/2019"}
-{"id": 26, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date today in MM/DD/YYYY?", "answer": " 08/03/1997"}
-{"id": 27, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date tomorrow in MM/DD/YYYY?", "answer": " 08/04/1997"}
-{"id": 28, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date yesterday in MM/DD/YYYY?", "answer": " 08/02/1997"}
-{"id": 29, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date 10 days ago in MM/DD/YYYY?", "answer": " 07/24/1997"}
-{"id": 30, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date a month ago in MM/DD/YYYY?", "answer": " 07/03/1997"}
-{"id": 31, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date one year ago from today in MM/DD/YYYY?", "answer": " 08/03/1996"}
-{"id": 32, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 07/27/1997"}
-{"id": 33, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date one week from today in MM/DD/YYYY?", "answer": " 08/10/1997"}
-{"id": 34, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 08/04/1997"}
-{"id": 35, "question": "Today is Sep 9, 1909. What is the date today in MM/DD/YYYY?", "answer": " 09/09/1909"}
-{"id": 36, "question": "Today is Sep 9, 1909. What is the date tomorrow in MM/DD/YYYY?", "answer": " 09/10/1909"}
-{"id": 37, "question": "Today is Sep 9, 1909. What is the date yesterday in MM/DD/YYYY?", "answer": " 09/08/1909"}
-{"id": 38, "question": "Today is Sep 9, 1909. What is the date 10 days ago in MM/DD/YYYY?", "answer": " 08/30/1909"}
-{"id": 39, "question": "Today is Sep 9, 1909. What is the date a month ago in MM/DD/YYYY?", "answer": " 08/09/1909"}
-{"id": 40, "question": "Today is Sep 9, 1909. What is the date one year ago from today in MM/DD/YYYY?", "answer": " 09/09/1908"}
-{"id": 41, "question": "Today is Sep 9, 1909. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 09/02/1909"}
-{"id": 42, "question": "Today is Sep 9, 1909. What is the date one week from today in MM/DD/YYYY?", "answer": " 09/16/1909"}
-{"id": 43, "question": "Today is Sep 9, 1909. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 09/10/1909"}
-{"id": 44, "question": "It is 4/19/1969 today. What is the date today in MM/DD/YYYY?", "answer": " 04/19/1969"}
-{"id": 45, "question": "It is 4/19/1969 today. What is the date tomorrow in MM/DD/YYYY?", "answer": " 04/20/1969"}
-{"id": 46, "question": "It is 4/19/1969 today. What is the date yesterday in MM/DD/YYYY?", "answer": " 04/18/1969"}
-{"id": 47, "question": "It is 4/19/1969 today. What is the date 10 days ago in MM/DD/YYYY?", "answer": " 04/09/1969"}
-{"id": 48, "question": "It is 4/19/1969 today. What is the date a month ago in MM/DD/YYYY?", "answer": " 03/19/1969"}
+{"id": 1, "question": "Today is Sep 9, 1909. What is the date today in MM/DD/YYYY?", "answer": " 09/09/1909"}
+{"id": 2, "question": "Today is Sep 9, 1909. What is the date tomorrow in MM/DD/YYYY?", "answer": " 09/10/1909"}
+{"id": 3, "question": "Today is Sep 9, 1909. What is the date yesterday in MM/DD/YYYY?", "answer": " 09/08/1909"}
+{"id": 4, "question": "Today is Sep 9, 1909. What is the date 10 days ago in MM/DD/YYYY?", "answer": " 08/30/1909"}
+{"id": 5, "question": "Today is Sep 9, 1909. What is the date a month ago in MM/DD/YYYY?", "answer": " 08/09/1909"}
+{"id": 6, "question": "Today is Sep 9, 1909. What is the date one year ago from today in MM/DD/YYYY?", "answer": " 09/09/1908"}
+{"id": 7, "question": "Today is Sep 9, 1909. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 09/02/1909"}
+{"id": 8, "question": "Today is Sep 9, 1909. What is the date one week from today in MM/DD/YYYY?", "answer": " 09/16/1909"}
+{"id": 9, "question": "Today is Sep 9, 1909. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 09/10/1909"}
+{"id": 10, "question": "Yesterday was April 30, 2021. What is the date one year ago from today in MM/DD/YYYY?", "answer": " 05/01/2020"}
+{"id": 11, "question": "Yesterday was April 30, 2021. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 04/24/2021"}
+{"id": 12, "question": "Yesterday was April 30, 2021. What is the date one week from today in MM/DD/YYYY?", "answer": " 05/08/2021"}
+{"id": 13, "question": "Yesterday was April 30, 2021. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 05/02/2021"}
+{"id": 14, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date today in MM/DD/YYYY?", "answer": " 05/30/2021"}
+{"id": 15, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date tomorrow in MM/DD/YYYY?", "answer": " 05/31/2021"}
+{"id": 16, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date yesterday in MM/DD/YYYY?", "answer": " 05/29/2021"}
+{"id": 17, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date a month ago in MM/DD/YYYY?", "answer": " 04/30/2021"}
+{"id": 18, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one year ago from today in MM/DD/YYYY?", "answer": " 05/30/2020"}
+{"id": 19, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 05/23/2021"}
+{"id": 20, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one week from today in MM/DD/YYYY?", "answer": " 06/06/2021"}
+{"id": 21, "question": "The deadline is Jun 1, 2021, which is 2 days away from now. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 05/31/2021"}
+{"id": 22, "question": "Tomorrow is 11/12/2019. What is the date today in MM/DD/YYYY?", "answer": " 11/11/2019"}
+{"id": 23, "question": "Tomorrow is 11/12/2019. What is the date tomorrow in MM/DD/YYYY?", "answer": " 11/12/2019"}
+{"id": 24, "question": "Tomorrow is 11/12/2019. What is the date yesterday in MM/DD/YYYY?", "answer": " 11/10/2019"}
+{"id": 25, "question": "Tomorrow is 11/12/2019. What is the date 10 days ago in MM/DD/YYYY?", "answer": " 11/01/2019"}
+{"id": 26, "question": "Tomorrow is 11/12/2019. What is the date a month ago in MM/DD/YYYY?", "answer": " 10/11/2019"}
+{"id": 27, "question": "Tomorrow is 11/12/2019. What is the date one year ago from today in MM/DD/YYYY?", "answer": " 11/11/2018"}
+{"id": 28, "question": "Tomorrow is 11/12/2019. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 11/04/2019"}
+{"id": 29, "question": "Tomorrow is 11/12/2019. What is the date one week from today in MM/DD/YYYY?", "answer": " 11/18/2019"}
+{"id": 30, "question": "Tomorrow is 11/12/2019. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 11/12/2019"}
+{"id": 31, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date today in MM/DD/YYYY?", "answer": " 08/03/1997"}
+{"id": 32, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date tomorrow in MM/DD/YYYY?", "answer": " 08/04/1997"}
+{"id": 33, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date yesterday in MM/DD/YYYY?", "answer": " 08/02/1997"}
+{"id": 34, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date 10 days ago in MM/DD/YYYY?", "answer": " 07/24/1997"}
+{"id": 35, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date a month ago in MM/DD/YYYY?", "answer": " 07/03/1997"}
+{"id": 36, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date one year ago from today in MM/DD/YYYY?", "answer": " 08/03/1996"}
+{"id": 37, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 07/27/1997"}
+{"id": 38, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date one week from today in MM/DD/YYYY?", "answer": " 08/10/1997"}
+{"id": 39, "question": "Today, 8/3/1997, is a day that we will never forget. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 08/04/1997"}
+{"id": 40, "question": "Yesterday was April 30, 2021. What is the date yesterday in MM/DD/YYYY?", "answer": " 04/30/2021"}
+{"id": 41, "question": "Yesterday was April 30, 2021. What is the date 10 days ago in MM/DD/YYYY?", "answer": " 04/21/2021"}
+{"id": 42, "question": "Yesterday was April 30, 2021. What is the date a month ago in MM/DD/YYYY?", "answer": " 04/01/2021"}
+{"id": 43, "question": "It is 4/19/1969 today. What is the date today in MM/DD/YYYY?", "answer": " 04/19/1969"}
+{"id": 44, "question": "It is 4/19/1969 today. What is the date tomorrow in MM/DD/YYYY?", "answer": " 04/20/1969"}
+{"id": 45, "question": "It is 4/19/1969 today. What is the date yesterday in MM/DD/YYYY?", "answer": " 04/18/1969"}
+{"id": 46, "question": "It is 4/19/1969 today. What is the date 10 days ago in MM/DD/YYYY?", "answer": " 04/09/1969"}
+{"id": 47, "question": "It is 4/19/1969 today. What is the date a month ago in MM/DD/YYYY?", "answer": " 03/19/1969"}
+{"id": 48, "question": "The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 01/08/2019"}
 {"id": 49, "question": "It is 4/19/1969 today. What is the date one year ago from today in MM/DD/YYYY?", "answer": " 04/19/1968"}
 {"id": 50, "question": "It is 4/19/1969 today. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 04/12/1969"}
 {"id": 51, "question": "It is 4/19/1969 today. What is the date one week from today in MM/DD/YYYY?", "answer": " 04/26/1969"}
@@ -356,4 +356,3 @@
 {"id": 355, "question": "The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date a month ago in MM/DD/YYYY?", "answer": " 12/07/2018"}
 {"id": 356, "question": "The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date one week ago from today in MM/DD/YYYY?", "answer": " 12/31/2018"}
 {"id": 357, "question": "The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date one week from today in MM/DD/YYYY?", "answer": " 01/14/2019"}
-{"id": 358, "question": "The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date 24 hours later in MM/DD/YYYY?", "answer": " 01/08/2019"}

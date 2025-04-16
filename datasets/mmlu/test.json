@@ -4,8 +4,8 @@
     "answer": "C"
   },
   {
-    "input": "For what reasons has Kelly's theory been criticized?\nOptions:\nA its applied value.\nB its emphasis on cognition.\nC minimizing the importance of emotions.\nD all of the above",
-    "answer": "C"
+    "input": "During which period does the magnetosphere become unstable as a result of magnetic storms?\nOptions:\nA main phase\nB initial phase\nC storm sudden commencement phase\nD None of the above",
+    "answer": "A"
   },
   {
     "input": "How can mutually exclusive projects be more accurately ranked?\nOptions:\nA Net Present Value Method\nB Modified Internal Rate of Returns Method\nC Internal rate of return method\nD None of the other choices",
@@ -16,16 +16,16 @@
     "answer": "A"
   },
   {
-    "input": "What technology employs miniaturized accelerometers and gyroscopes?\nOptions:\nA Sensors\nB Actuators\nC MEMS (MicroElectroMechanical System)\nD None of the mentioned",
-    "answer": "A"
+    "input": "Filipinos have songs for every occasion. During pre-colonial times, which song would they sing to prepare for war or battle?\nOptions:\nA Oyayi\nB Kundiman\nC Kumintang\nD Diyona",
+    "answer": "C"
   },
-  {
+  wrong{
     "input": "What is the correct IUPAC name for the compound CH3-CH=CH-CHO?\nOptions:\nA 2-Butenal\nB Buten-2-al\nC But-2-enal\nD Butenal",
     "answer": "A"
   },
   {
-    "input": "In the country of Arcadia, individuals from minority groups are labeled as inferior. They often have physically demanding jobs with very low pay. The dominant groups use this stigmatization to rationalize the treatment of the minority groups. Which theory does this scenario illustrate?\nOptions:\nA normative\nB scapegoating\nC None of the other choices\nD authoritarian personality",
-    "answer": "C"
+    "input": "Who is typically responsible for adhering to the procedural formalities related to corporate restructuring in a company?\nOptions:\nA Finance Function\nB None of the other choices\nC Administration Function\nD Secretarial Function",
+    "answer": "D"
   },
   {
     "input": "Two compounds, A and B, were tested for their boiling points. It was noted that A began to boil later than B under identical conditions. Given that compound B is acetone, which of the following could compound A be?\nOptions:\nA n-Butane\nB Methoxyethane\nC Propanol\nD Propanal",
@@ -52,10 +52,10 @@
     "answer": "B"
   },
   {
-    "input": "What is the EHT voltage in a CRT monitor?\nOptions:\nA 24kv\nB 40kv\nC 30kv\nD 20kv",
+    "input": "According to differential association theory, what is the most probable background common among juvenile delinquents?\nOptions:\nA They are from families that have a history of being involved in crime.\nB They are common in families living in poverty.\nC They come from regions populated by large numbers of minorities.\nD None of the other choices",
     "answer": "A"
   },
-  {
+  wrong{
     "input": "It is claimed that enteral nutrition is safer than parenteral nutrition. Which of the following could be potential complications of enteral nutrition?\nOptions:\nA Vomiting and aspiration.\nB Perforation and peritonitis.\nC None of the other choices\nD Pneumatosis cystoides intestinalis.",
     "answer": "C"
   },
@@ -71,8 +71,8 @@
     "input": "What are the main components of photochemical smog found in densely populated metropolitan areas?\nOptions:\nA PAN, smoke and SO2\nB Ozone, PAN and NO2\nC None of the other choices\nD Ozone, SO2 and hydrocarbons",
     "answer": "B"
   },
-  {
-    "input": "According to differential association theory, what is the most probable background common among juvenile delinquents?\nOptions:\nA They are from families that have a history of being involved in crime.\nB They are common in families living in poverty.\nC They come from regions populated by large numbers of minorities.\nD None of the other choices",
+  wrong{
+    "input": "What is the EHT voltage in a CRT monitor?\nOptions:\nA 24kv\nB 40kv\nC 30kv\nD 20kv",
     "answer": "A"
   },
   {
@@ -84,36 +84,12 @@
     "answer": "B"
   },
   {
-    "input": "CO produced during combustion is eliminated by __________\nOptions:\nA reduction\nB oxidation\nC both\nD none",
-    "answer": "A"
-  },
-  {
-    "input": "Sameer, who is in the real estate business, built a property for sale and obtained the completion certificate on 13.8.2017, but has not yet sold it. From which previous year does he need to pay tax on a notional basis under the head of house property?\nOptions:\nA 2018-19\nB 2019-20\nC 2017-18\nD 2020-21",
-    "answer": "D"
-  },
-  {
-    "input": "Who is typically responsible for adhering to the procedural formalities related to corporate restructuring in a company?\nOptions:\nA Finance Function\nB None of the other choices\nC Administration Function\nD Secretarial Function",
-    "answer": "D"
-  },
-  {
-    "input": "Filipinos have songs for every occasion. During pre-colonial times, which song would they sing to prepare for war or battle?\nOptions:\nA Oyayi\nB Kundiman\nC Kumintang\nD Diyona",
-    "answer": "C"
-  },
-  {
-    "input": "During which period does the magnetosphere become unstable as a result of magnetic storms?\nOptions:\nA main phase\nB initial phase\nC storm sudden commencement phase\nD None of the above",
-    "answer": "A"
-  },
-  {
-    "input": "Which event in Islamic history is referred to as Fath-e-Mubeen in the Holy Quran?\nOptions:\nA Conquest of Makkah\nB None of the other choices\nC Badr\nD Treaty of Hudaybia",
+    "input": "Which team won the Buchi Babu Memorial Trophy in the All India invitation cricket tournament on September 1st, 2015?\nOptions:\nA Chhattisgarh\nB TNCA XI\nC Chandigarh\nD Mumbai",
     "answer": "D"
   },
   {
     "input": "Which of the following techniques significantly contributes to the skewed sex ratio?\nOptions:\nA Pre-natal diagnostic techniques\nB Peri-natal diagnostic techniques\nC Post-natal diagnostic techniques\nD None of the above",
     "answer": "A"
-  },
-  {
-    "input": "Which team won the Buchi Babu Memorial Trophy in the All India invitation cricket tournament on September 1st, 2015?\nOptions:\nA Chhattisgarh\nB TNCA XI\nC Chandigarh\nD Mumbai",
-    "answer": "D"
   },
   {
     "input": "Which psychological disorders have been effectively treated with Selective Serotonin Reuptake Inhibitors (SSRIs)?\nOptions:\nA Schizophrenia\nB Gender Dysphoria\nC Obsessive-compulsive disorder\nD None of the other choices",

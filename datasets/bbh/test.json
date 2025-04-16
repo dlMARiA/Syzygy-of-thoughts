@@ -1,15 +1,15 @@
 [
   {
-    "input": "Jane scheduled 3 apointments with 5 poeple for tomorrow Tue, 7/9/1972. What is the date one week ago from today in MM/DD/YYYY?\nOptions:\nA 07/09/1972\nB 12/01/1972\nC 07/01/2008\nD 05/13/1972\nE 07/01/1972\nF 08/12/1972",
-    "answer": "E"
+    "input": "On the nightstand, you see one green necklace, two green textbooks, and two blue textbooks. If I remove all the textbooks from the nightstand, how many green items remain on it?\nOptions:\nA zero\nB one\nC two\nD three\nE four\nF five\nG six\nH seven\nI eight\nJ nine\nK ten\nL eleven\nM twelve\nN thirteen\nO fourteen\nP fifteen\nQ sixteen",
+    "answer": "B"
   },
   {
     "input": "The following translations from German to English contain a particular error. That error will be one of the following types: Named Entities: An entity names, places, locations, etc. is changed to a different entity. Numerical Values: Numerical values ordinals or cardinals, dates, and/or units are changed. Modifiers or Adjectives: The modifiers and adjectives pertaining to a noun are changed. Negation or Antonyms: Introduce or remove a negation or change comparatives to their antonyms. Facts: Trivial factual errors not pertaining to the above classes are introduced in the translations. Dropped Content: A significant clause in the translation is removed. Please identify that error.  Source: Wellendichtringe sind Dichtungen, die verwendet werden, um Maschinengehäuse an austretenden Elementen gegen die Umgebung abzudichten.\nTranslation: Shaft seals are seals used to steal machine housings on leaking elements against the environment.\nThe translation contains an error pertaining to\nOptions:\nA Modifiers or Adjectives\nB Numerical Values\nC Negation or Antonyms\nD Named Entities\nE Dropped Content\nF Facts",
     "answer": "F"
   },
   {
-    "input": "This SVG path element <path d=\"M 36.48,46.06 L 35.35,54.14 L 73.45,59.46 L 74.58,51.38 L 36.48,46.06\"/> draws a\nOptions:\nA circle\nB heptagon\nC hexagon\nD kite\nE line\nF octagon\nG pentagon\nH rectangle\nI sector\nJ triangle\nK trapezoid",
-    "answer": "K"
+    "input": "Which of the following is a humorous edit of this artist or movie name: 'the cult'?\nOptions:\nA the colt\nB dthe cult\nC the cut\nD hhe cult",
+    "answer": "A"
   },
   {
     "input": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are five birds: a blue jay, a robin, a cardinal, a hawk, and a falcon. The blue jay is the rightmost. The robin is to the right of the falcon. The cardinal is to the left of the hawk. The falcon is to the right of the hawk.\nOptions:\nA The blue jay is the third from the left\nB The robin is the third from the left\nC The cardinal is the third from the left\nD The hawk is the third from the left\nE The falcon is the third from the left",
@@ -20,16 +20,16 @@
     "answer": "B"
   },
   {
-    "input": "This SVG path element <path d=\"M 42.84,45.37 L 48.55,45.35 M 48.55,45.35 L 49.27,51.61 L 55.53,50.89 L 56.80,56.46 M 56.80,56.46 L 51.67,61.48 M 51.67,61.48 L 42.62,59.98 L 39.66,50.81 L 42.84,45.37\"/> draws a\nOptions:\nA circle\nB heptagon\nC hexagon\nD kite\nE line\nF octagon\nG pentagon\nH rectangle\nI sector\nJ triangle",
-    "answer": "F"
+    "input": "Which sentence has the correct adjective order:\nOptions:\nA little prismlike Russian nice knife\nB nice little prismlike Russian knife",
+    "answer": "B"
   },
   {
     "input": "Here is a table where the first line is a header and each subsequent line is a penguin:  name, age, height cm, weight kg Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15  For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm.  We now add a penguin to the table:\nJames, 12, 90, 12\nWe then delete the penguin named Bernard from the table.\nWhat is the name of the last penguin sorted by alphabetic order?\nOptions:\nA Louis\nB Bernard\nC Vincent\nD Gwen\nE James",
     "answer": "C"
   },
   {
-    "input": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a shelf, there are five books: a gray book, a red book, a yellow book, a blue book, and an orange book. The gray book is to the right of the yellow book. The orange book is to the right of the red book. The blue book is the rightmost. The gray book is to the left of the red book.\nOptions:\nA The gray book is the second from the left\nB The red book is the second from the left\nC The yellow book is the second from the left\nD The blue book is the second from the left\nE The orange book is the second from the left",
-    "answer": "A"
+    "input": "In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date a month ago in MM/DD/YYYY?\nOptions:\nA 11/22/2001\nB 10/21/2002\nC 07/21/2002\nD 10/22/1923\nE 10/15/2002\nF 10/22/2002",
+    "answer": "F"
   },
   {
     "input": "In the following sentences, explain the antecedent of the pronoun which thing the pronoun refers to, or state that it is ambiguous.\nSentence: Bailey will plan to meet the director at her office\nOptions:\nA It will be Bailey's office\nB It will be the director's office\nC Ambiguous",
@@ -72,27 +72,11 @@
     "answer": "F"
   },
   {
-    "input": "On the nightstand, you see one green necklace, two green textbooks, and two blue textbooks. If I remove all the textbooks from the nightstand, how many green items remain on it?\nOptions:\nA zero\nB one\nC two\nD three\nE four\nF five\nG six\nH seven\nI eight\nJ nine\nK ten\nL eleven\nM twelve\nN thirteen\nO fourteen\nP fifteen\nQ sixteen",
-    "answer": "B"
-  },
-  {
-    "input": "Which of the following is a humorous edit of this artist or movie name: 'the cult'?\nOptions:\nA the colt\nB dthe cult\nC the cut\nD hhe cult",
-    "answer": "A"
-  },
-  {
     "input": "Here is a table where the first line is a header and each subsequent line is a penguin:  name, age, height cm, weight kg Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15  For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm.  We now add a penguin to the table:\nJames, 12, 90, 12\nAnd here is a similar table, but listing giraffes:\nname, age, height cm, weight kg\nJody, 5, 430, 620\nGladys, 10, 420, 590\nMarian, 2, 310, 410\nDonna, 9, 440, 650\nWhat is the cumulated age of the penguins?\nOptions:\nA 26\nB 29\nC 41\nD 55\nE 67",
     "answer": "C"
   },
   {
     "input": "The following translations from German to English contain a particular error. That error will be one of the following types: Named Entities: An entity names, places, locations, etc. is changed to a different entity. Numerical Values: Numerical values ordinals or cardinals, dates, and/or units are changed. Modifiers or Adjectives: The modifiers and adjectives pertaining to a noun are changed. Negation or Antonyms: Introduce or remove a negation or change comparatives to their antonyms. Facts: Trivial factual errors not pertaining to the above classes are introduced in the translations. Dropped Content: A significant clause in the translation is removed. Please identify that error.  Source: Auf dem Gebiet des deutschen Bundeslandes Hessen befindet sich eine Vielzahl von Schlössern und Burgen.\nTranslation: On the territory of the German state of Hesse there are a large number of castles and rockets.\nThe translation contains an error pertaining to\nOptions:\nA Modifiers or Adjectives\nB Numerical Values\nC Negation or Antonyms\nD Named Entities\nE Dropped Content\nF Facts",
-    "answer": "F"
-  },
-  {
-    "input": "Which sentence has the correct adjective order:\nOptions:\nA little prismlike Russian nice knife\nB nice little prismlike Russian knife",
-    "answer": "B"
-  },
-  {
-    "input": "In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date a month ago in MM/DD/YYYY?\nOptions:\nA 11/22/2001\nB 10/21/2002\nC 07/21/2002\nD 10/22/1923\nE 10/15/2002\nF 10/22/2002",
     "answer": "F"
   },
   {
