@@ -111,12 +111,13 @@ The project dependencies are listed in the `requirements.txt` file. Use pip to i
 ```
 pip install -r requirement_windows.txt
 ```
-[下载 requirements_windows.txt](https://raw.githubusercontent.com/dlMARiA/Syzygy-of-thoughts/main/requirements/requirement_windows.txt)
+[下载 requirements_windows.txt](https://drive.google.com/uc?export=download&id=1wft5d2EJBjA_OaPdlJZEWEMrCJBf4dDI
+)
 
 ```
 pip install -r requirement_ubuntu.txt
 ```
-[下载 requirements_ubuntu.txt](https://raw.githubusercontent.com/dlMARiA/Syzygy-of-thoughts/main/requirements/requirement_ubuntu.txt)
+[下载 requirements_ubuntu.txt](https://drive.google.com/uc?export=download&id=1kYt74cs_YP-Nt7C3C1z7E3nCaxcKXeTG)
 
 
 
