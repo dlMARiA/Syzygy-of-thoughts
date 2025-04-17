@@ -1,9 +1,11 @@
 import traceback
-from config.settings import settings
+from config.sot_settings import settings as sot_settings
+from config.diy_settings import settings as diy_settings
 from models.openai_client import initialize_llm
 from interfaces import PromptTemplateFactoryInterface, DatasetLoaderInterface
 from utils.parse_answer import parse_llm_answer, parse_dataset_answer
 from utils.answer_validator import validate_response
+from utils.arg_parser import parse_arguments
 from log.logger_utils import Logger
 
 logger = Logger().get_logger()
@@ -28,31 +30,32 @@ class Runner:
     def __init__(self, prompt_factory: PromptTemplateFactoryInterface, dataset_loader: DatasetLoaderInterface):
         self.prompt_factory = prompt_factory
         self.dataset_loader = dataset_loader
+        args = parse_arguments()
+        if args.prompt_type == 'diy': self.settings = diy_settings
+        elif args.prompt_type == 'sot': self.settings = sot_settings
 
-    def run(self, dataset_path: str = settings.RUNNER_DEFAULT_DATASET,
-            dataset_type: str = settings.RUNNER_DEFAULT_DATASET_TYPE,
-            method: str = settings.RUNNER_DEFAULT_METHOD,
-            betti_number: int = settings.RUNNER_DEFAULT_BETTI_NUMBER,
-            solution_number: int = settings.RUNNER_DEFAULT_SOLUTION_NUMBER,
-            temperature: float = settings.TEMPERATURE):
+    def run(self):
         """
-        Executes the main functionality to analyze a dataset using a specified method and configuration.
+        Executes the logic for loading a dataset, processing problems within it, and validating answers using a large
+        language model (LLM). Handles errors during dataset loading, problem processing, and validation. Logs performance
+        metrics including accuracy and numbers of correct and incorrect answers.
 
-        The method performs analysis on the input dataset by loading it, applying a processing chain, and
-        validating the results obtained from a machine learning model. The accuracy and incorrect cases
-        are reported at the end.
-
-        Args:
-            dataset_path: The file path to the dataset to be processed.
-            dataset_type: Specifies the type or format of the dataset (e.g., 'aqua').
-            method: The method to be used for prompt generation and processing.
-            betti_number: A critical parameter influencing the analysis based on topological characteristics.
-            solution_number: The identifier for selecting the specific solution from the dataset.
-            temperature: The temperature setting for the machine learning model influencing its response creativity.
-
+        Attributes:
+            dataset_path (str): Path to the dataset file.
+            dataset_type (str): Type of dataset (e.g., 'aqua').
+            method (str): Processing methodology ('sot' or 'diy').
+            betti_number (int): Hyperparameter for the chosen method.
+            solution_number (int): Number of potential solutions for the problem.
+            temperature (float): Temperature parameter to control randomness in the LLM's responses.
         """
+        dataset_path: str = self.settings.RUNNER_DEFAULT_DATASET
+        dataset_type: str = self.settings.RUNNER_DEFAULT_DATASET_TYPE
+        method: str = self.settings.RUNNER_DEFAULT_METHOD
+        betti_number: int = self.settings.RUNNER_DEFAULT_BETTI_NUMBER
+        solution_number: int = self.settings.RUNNER_DEFAULT_SOLUTION_NUMBER
+        temperature: float = self.settings.TEMPERATURE
         try:
-            settings.set_temperature(temperature)
+            self.settings.set_temperature(temperature)
             # Print current temperature
             # logger.debug(f"Current temperature: {settings.TEMPERATURE}")
 
@@ -84,10 +87,18 @@ class Runner:
 
             for idx, item in enumerate(dataset, 1):
                 try:
-                    input_dict = {
-                        "problem": item["problem"],
-                        "betti_number": betti_number,
-                    }
+                    if method == 'sot':
+                        input_dict = {
+                            "problem": item["problem"],
+                            "betti_number": betti_number,
+                        }
+                    elif method == 'diy':
+                        input_dict = {
+                            "problem": item["problem"],
+                        }
+                    else :
+                        raise ValueError(f"Invalid input: {method} (expected 'sot' or 'diy')")
+
                     if dataset_type == 'aqua':
                         input_dict["options"] = item["options"]
 

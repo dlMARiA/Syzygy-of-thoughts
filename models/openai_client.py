@@ -1,6 +1,8 @@
 from langchain_openai import ChatOpenAI
-from config.settings import settings
+from config.sot_settings import settings as sot_settings
+from config.diy_settings import settings as diy_settings
 from log.logger_utils import Logger
+from utils.arg_parser import parse_arguments
 
 logger = Logger().get_logger()
 
@@ -16,6 +18,14 @@ def initialize_llm():
     - Catch all initialization exceptions and convert them into meaningful error messages.
     - Ensure the presence of the API key is verified.
     """
+    args = parse_arguments()
+    if args.prompt_type == 'diy':
+        settings = diy_settings
+    elif args.prompt_type == 'sot':
+        settings = sot_settings
+    else:
+        raise ValueError(f"Invalid input: {args.prompt_type} (expected 'diy' or 'sot')")
+
     # Verify if the API key exists
     if not settings.OPENAI_API_KEY:
         raise ValueError("OPENAI_API_KEY is not set in the configuration.")

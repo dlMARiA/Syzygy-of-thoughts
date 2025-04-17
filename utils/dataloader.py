@@ -1,8 +1,10 @@
 from interfaces import DatasetLoaderInterface
 import json
 from pathlib import Path
-from config.settings import settings
+from config.sot_settings import settings as sot_settings
+from config.diy_settings import settings as diy_settings
 from log.logger_utils import Logger
+from utils.arg_parser import parse_arguments
 
 logger = Logger().get_logger()
 
@@ -15,7 +17,16 @@ class DatasetLoader(DatasetLoaderInterface):
         loader_mapping (dict): A mapping of dataset types to their respective
             loader functions as configured in the settings.
     """
+
     def __init__(self):
+        args = parse_arguments()
+        if args.prompt_type == 'diy':
+            settings = diy_settings
+        elif args.prompt_type == 'sot':
+            settings = sot_settings
+        else:
+            raise ValueError(f"Invalid input: {args.prompt_type} (expected 'diy' or 'sot')")
+
         self.loader_mapping = settings.DATASET_LOADER_MAPPING
 
     def load_math_bbh_mmlu(self, file_path):

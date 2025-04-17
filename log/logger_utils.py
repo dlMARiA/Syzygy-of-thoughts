@@ -29,10 +29,10 @@ class Logger:
         file_handler.setFormatter(formatter)
         self.logger.addHandler(file_handler)
 
-        stream_handler = logging.StreamHandler()
-        stream_handler.setLevel(logging.INFO)  # Set log level for stream handler to INFO
-        stream_handler.setFormatter(formatter)
-        self.logger.addHandler(stream_handler)
+        # stream_handler = logging.StreamHandler()
+        # stream_handler.setLevel(logging.INFO)  # Set log level for stream handler to INFO
+        # stream_handler.setFormatter(formatter)
+        # self.logger.addHandler(stream_handler)
 
     def get_logger(self):
         return self.logger

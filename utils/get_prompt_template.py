@@ -12,10 +12,25 @@ from prompts.sot_prompt import (
     get_sot_bbh_template,
     get_sot_SVAMP_template
 )
+from prompts.diy_prompt import (
+    get_sot_diy_template,
+    get_sot_gsm8k_diy_template,
+    get_sot_CLUTRR_diy_template,
+    get_sot_sport_diy_template,
+    get_sot_strangeqa_diy_template,
+    get_sot_data_diy_template,
+    get_sot_ASDiv_diy_template,
+    get_sot_mmlu_diy_template,
+    get_sot_AQUA_diy_template,
+    get_sot_bbh_diy_template,
+    get_sot_SVAMP_diy_template
+)
 import json
 import re
+from utils.arg_parser import parse_arguments
 from langchain.prompts import ChatPromptTemplate
-from config.settings import settings
+from config.sot_settings import settings as sot_settings
+from config.diy_settings import settings as diy_settings
 from log.logger_utils import Logger
 
 logger = Logger().get_logger()
@@ -56,6 +71,27 @@ def modify_sot_template(template):
         # logger.error("Failed to parse the template as JSON.")
         return None
 
+def modify_diy_template(template):
+    """
+    Modifies a DIY template string to conform to the expected format for a ChatPromptTemplate
+    object by replacing specific characters and patterns.
+
+    Args:
+        template (str): A string containing the original DIY template to modify.
+
+    Returns:
+        ChatPromptTemplate | None: The ChatPromptTemplate object created from the modified
+            template string. Returns None if the modified template cannot be parsed.
+    """
+    try:
+        modified_template_str = re.sub(r'^(\s*){', r'\1{{', template)
+        modified_template_str = re.sub(r'}(\s*)$', r'}}\1', modified_template_str)
+        template_obj = ChatPromptTemplate.from_template(modified_template_str)
+        return template_obj
+    except json.JSONDecodeError:
+        # logger.error("Failed to parse the template as JSON.")
+        return None
+
 
 class PromptTemplateFactory(PromptTemplateFactoryInterface):
     """
@@ -72,7 +108,15 @@ class PromptTemplateFactory(PromptTemplateFactoryInterface):
             between dataset types and their corresponding prompt template function paths.
     """
     def __init__(self):
-        self.sot_dataset_mapping = settings.PROMPT_TEMPLATE_MAPPING
+        args = parse_arguments()
+        if args.prompt_type == 'diy':
+            settings = diy_settings
+        elif args.prompt_type == 'sot':
+            settings = sot_settings
+        else:
+            raise ValueError(f"Invalid input: {args.prompt_type} (expected 'diy' or 'sot')")
+
+        self.dataset_mapping = settings.PROMPT_TEMPLATE_MAPPING
 
     def get_prompt_template(self, method: str, dataset_type: str, betti_number: int, solution_number: int):
         """
@@ -92,7 +136,7 @@ class PromptTemplateFactory(PromptTemplateFactoryInterface):
             is unsupported or an error occurs.
         """
         if method == 'sot':
-            template_path = self.sot_dataset_mapping.get(dataset_type)
+            template_path = self.dataset_mapping.get(dataset_type)
             if template_path:
                 parts = template_path.split('.')
                 module_name = '.'.join(parts[:-1])
@@ -108,4 +152,22 @@ class PromptTemplateFactory(PromptTemplateFactoryInterface):
                 return modify_sot_template(template)
         else:
             logger.error(f"Unsupported method type, unable to get the prompt template: {method}")
-            return None
+
+        if method == 'diy':
+            template_path = self.dataset_mapping.get(dataset_type)
+            if template_path:
+                parts = template_path.split('.')
+                module_name = '.'.join(parts[:-1])
+                function_name = parts[-1]
+                module = __import__(module_name, fromlist=[function_name])
+                template_func = getattr(module, function_name)
+                template = template_func(betti_number, solution_number)
+                logger.info(f"Got diy template for {dataset_type} before modification:\n{template}")
+                return modify_diy_template(template)
+            else:
+                template = get_sot_diy_template(betti_number, solution_number)
+                logger.info(f"Got general SOT template before modification:\n{template}")
+                return modify_diy_template(template)
+        else:
+            logger.error(f"Unsupported method type, unable to get the prompt template: {method}")
+        return None

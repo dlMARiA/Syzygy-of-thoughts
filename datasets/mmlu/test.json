@@ -19,7 +19,7 @@
     "input": "Filipinos have songs for every occasion. During pre-colonial times, which song would they sing to prepare for war or battle?\nOptions:\nA Oyayi\nB Kundiman\nC Kumintang\nD Diyona",
     "answer": "C"
   },
-  wrong{
+  {
     "input": "What is the correct IUPAC name for the compound CH3-CH=CH-CHO?\nOptions:\nA 2-Butenal\nB Buten-2-al\nC But-2-enal\nD Butenal",
     "answer": "A"
   },
@@ -55,7 +55,7 @@
     "input": "According to differential association theory, what is the most probable background common among juvenile delinquents?\nOptions:\nA They are from families that have a history of being involved in crime.\nB They are common in families living in poverty.\nC They come from regions populated by large numbers of minorities.\nD None of the other choices",
     "answer": "A"
   },
-  wrong{
+  {
     "input": "It is claimed that enteral nutrition is safer than parenteral nutrition. Which of the following could be potential complications of enteral nutrition?\nOptions:\nA Vomiting and aspiration.\nB Perforation and peritonitis.\nC None of the other choices\nD Pneumatosis cystoides intestinalis.",
     "answer": "C"
   },
@@ -71,7 +71,7 @@
     "input": "What are the main components of photochemical smog found in densely populated metropolitan areas?\nOptions:\nA PAN, smoke and SO2\nB Ozone, PAN and NO2\nC None of the other choices\nD Ozone, SO2 and hydrocarbons",
     "answer": "B"
   },
-  wrong{
+  {
     "input": "What is the EHT voltage in a CRT monitor?\nOptions:\nA 24kv\nB 40kv\nC 30kv\nD 20kv",
     "answer": "A"
   },

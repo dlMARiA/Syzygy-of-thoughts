@@ -6,9 +6,11 @@ openai:
   max_retries: 3
   temperature: 0
 runner:
-  default_dataset: datasets/gsm8k/test.jsonl
-  default_dataset_type: gsm8k
-  default_method: sot
+  tip: "Please answer step by step"
+  default_tip: "You must provide your answer in JSON format and all key-value pairs must be enclosed in quotation marks. like 'final answer' = '100'"
+  default_dataset: datasets/mmlu/test.json
+  default_dataset_type: MMLU
+  default_method: diy
   default_betti_number: 10
   default_solution_number: 5
 dataset_loader_mapping:
@@ -23,16 +25,16 @@ dataset_loader_mapping:
   date: utils.dataloader.load_other_datasets
   ASDiv: utils.dataloader.load_other_datasets
 prompt_template_mapping:
-  bbh: utils.get_prompt_template.get_sot_bbh_template
-  gsm8k: utils.get_prompt_template.get_sot_gsm8k_template
-  CLUTRR: utils.get_prompt_template.get_sot_CLUTRR_template
-  date: utils.get_prompt_template.get_sot_data_template
-  ASDiv: utils.get_prompt_template.get_sot_ASDiv_template
-  mmlu: utils.get_prompt_template.get_sot_mmlu_template
-  AQUA: utils.get_prompt_template.get_sot_AQUA_template
-  SVAMP: utils.get_prompt_template.get_sot_SVAMP_template
-  sport: utils.get_prompt_template.get_sot_sport_template
-  strangeqa: utils.get_prompt_template.get_sot_strangeqa_template
+  bbh: utils.get_prompt_template.get_sot_bbh_diy_template
+  gsm8k: utils.get_prompt_template.get_sot_gsm8k_diy_template
+  CLUTRR: utils.get_prompt_template.get_sot_CLUTRR_diy_template
+  date: utils.get_prompt_template.get_sot_data_diy_template
+  ASDiv: utils.get_prompt_template.get_sot_ASDiv_diy_template
+  mmlu: utils.get_prompt_template.get_sot_mmlu_diy_template
+  AQUA: utils.get_prompt_template.get_sot_AQUA_diy_template
+  SVAMP: utils.get_prompt_template.get_sot_SVAMP_diy_template
+  sport: utils.get_prompt_template.get_sot_sport_diy_template
+  strangeqa: utils.get_prompt_template.get_sot_diy_strangeqa_template
 answer_parser_mapping:
   math: utils.parse_factory.MathParser
   gsm8k: utils.parse_factory.GSM8KParser
