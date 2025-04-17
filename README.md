@@ -241,6 +241,12 @@ The following table compares the performance of CoT, CoT-SC (n=5), and SoT acros
 ## 📝 Citation
 If you find SoT useful to your research, please cite our work as an acknowledgment.(*^▽^*)
 ```bib
+@article{li2025syzygy,
+  title={Syzygy of Thoughts: Improving LLM CoT with the Minimal Free Resolution},
+  author={Li, Chenghao and Zhang, Chaoning and Lu, Yi and Zhang, Jiaquan and Sun, Qigan and Wang, Xudong and Wei, Jiwei and Wang, Guoqing and Yang, Yang and Shen, Heng Tao},
+  journal={arXiv preprint arXiv:2504.09566},
+  year={2025}
+}
 
 ```
 
