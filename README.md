@@ -109,8 +109,16 @@ source venv/bin/activate
 The project dependencies are listed in the `requirements.txt` file. Use pip to install them:
 
 ```
-pip install -r requirements.txt
+pip install -r requirement_windows.txt
 ```
+[下载 requirements_windows.txt](requirements/requirement_windows.txt)
+
+```
+pip install -r requirement_ubuntu.txt
+```
+[下载 requirements_ubuntu.txt](requirements/requirement_ubuntu.txt)
+
+
 
 ### Data Preparation
 Before running the project, you need to prepare the corresponding datasets. The project already provides several common datasets, such as mathematics, question-answering, sports, etc., to meet the needs of different test scenarios.  
