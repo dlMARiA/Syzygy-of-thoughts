@@ -26,11 +26,12 @@ This project is the code implementation for the paper Syzygy of Thoughts: Improv
 
 ---
 
-### 🗓️ **2025-04-13** | 📄 Paper Submission & arXiv Preprint  
-**Title:** *Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution*  
-- ✅ Submitted to **ACM Multimedia Conference (ACM MM)** for review  
-- 📚 Published preprint on **arXiv**  
-  🔗 [arXiv: 2504.09566](https://arxiv.org/abs/2504.09566)
+### 🗓️ **2025-04-18** | 🌟 Launch of DIY CoT Template Feature                                    
+>  Introducing: **DIY Modules for Chain of Thought (CoT)**  
+- 🧩 Create your own **reasoning structures**  
+- 🔧 Customize templates to suit **specific tasks or domains**  
+- 🎨 Design your own logic flow to enhance LLM performance  
+👉 [Explore the DIY Module](#diy-section)
 
 ---
 
@@ -40,18 +41,13 @@ This project is the code implementation for the paper Syzygy of Thoughts: Improv
   🔗 [https://huggingface.co/papers/2504.09566](https://huggingface.co/papers/2504.09566)
 
 ---
-
-### 🗓️ **2025-04-18** | 🌟 Launch of DIY CoT Template Feature  
-> ✨ Introducing: **DIY Modules for Chain of Thought (CoT)**  
-- 🧩 Create your own **reasoning structures**  
-- 🔧 Customize templates to suit **specific tasks or domains**  
-- 🎨 Design your own logic flow to enhance LLM performance  
-👉 [Explore the DIY Module](#diy-section)
+### 🗓 **2025-04-13** | 📄 Paper Submission & arXiv Preprint  
+**Title:** *Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution*  
+- ✅ Submitted to **ACM Multimedia Conference (ACM MM)** for review  
+- 📚 Published preprint on **arXiv**  
+  🔗 [arXiv: 2504.09566](https://arxiv.org/abs/2504.09566)
 
 ---
-
-
-
 
 
 
