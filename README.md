@@ -259,8 +259,7 @@ The following table compares the performance of CoT, CoT-SC (n=5), and SoT acros
 ```
     python main.py --prompt_type sot
 ```
-With these simple two steps, you ca
-    python main.py --prompt_type n easily customize and run the appropriate CoT model according to your needs!
+With these simple two steps, you can easily customize and run the appropriate CoT model according to your needs!
 
 
 
