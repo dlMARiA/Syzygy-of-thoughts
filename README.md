@@ -239,6 +239,27 @@ The following table compares the performance of CoT, CoT-SC (n=5), and SoT acros
   <p>Here, you can find detailed information on how to create and customize your own CoT templates...</p>
 </div>
 
+### Quick Start 🚀
+#### Step 1: Configure Your CoT Template 🔧
+- **Location**: `config/diy.yaml`
+- **Instructions**:
+    - In the `diy.yaml` file, customize the `tip` field to create your personalized CoT template.
+    - Example configuration:
+```
+    runner:
+        tip: "Please answer step by step"   # Custom tip
+```
+#### Step 2: Run the Program with the Desired Mode 🏃‍♂️
+- **Command Format**:
+###### To use the DIY module:
+```
+    python main.py --prompt_type diy
+```
+###### To use the SoT module:
+```
+    python main.py --prompt_type sot
+```
+With these simple two steps, you can easily customize and run the appropriate CoT model according to your needs!
 
 
 
