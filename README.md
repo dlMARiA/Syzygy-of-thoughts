@@ -155,7 +155,7 @@ Additionally, you will need to create a script similar to `openai_client.py` to 
 ### Run the Project
 After completing the preparation steps, you can run the project for testing. Execute the following command in the project's root directory:
 ```
-python main.py
+python main.py --prompt_type sot
 ```
 After executing this command, the program will automatically load the dataset, configure the API information, and call the corresponding model for testing. Finally, it will output the test report, which includes the total number of questions, the number of correct answers, the accuracy rate, and the IDs of the incorrectly answered questions.
 
