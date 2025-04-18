@@ -22,18 +22,34 @@ This project is the code implementation for the paper Syzygy of Thoughts: Improv
 <img src="assets/Snipaste_2025-04-13_18-40-03.png" alt="teaser" width="850" />
 </div>
 
-## 📰 what's new
-### 1. ACM MM Submission & arXiv Preprint 📄
-We are excited to announce that our paper, Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution, has been submitted to the ACM Multimedia Conference (ACM MM) for review. Additionally, the arXiv preprint of the paper https://arxiv.org/abs/2504.09566.
+## 🕘 What's New – Project Timeline
 
-### 2. Brand New DIY CoT Chain of Thought Template Feature 🌟
-<div class="diy-feature">
-  <p>
-    We've introduced an exciting new feature—DIY Modules! Now, you can not only use our provided standard templates but also create your own unique DIY Modules tailored to your needs. Whether it’s a reasoning chain for specific tasks or an innovative thought structure design, you have the freedom to adjust and optimize it. This allows the reasoning process to better fit your actual use case. Unleash your creativity and craft your very own DIY Module, enhancing the efficiency and intelligence of your reasoning experience!
-  </p>
-  <!-- Button to scroll to the DIY section -->
-  <a href="#diy-section" class="jump-button">Explore DIY Module</a>👈
-</div>
+---
+
+### 🗓️ **2025-04-13** | 📄 Paper Submission & arXiv Preprint  
+**Title:** *Syzygy of Thoughts: Enhancing LLM Reasoning with Minimal Free Resolution*  
+- ✅ Submitted to **ACM Multimedia Conference (ACM MM)** for review  
+- 📚 Published preprint on **arXiv**  
+  🔗 [arXiv: 2504.09566](https://arxiv.org/abs/2504.09566)
+
+---
+
+### 🗓️ **2025-04-17** | 🤝 Collaboration with Hugging Face  
+- 🎉 **Hugging Face** discovered our paper on arXiv  
+- 📬 Invited to showcase our **research & models** on their platform  
+  🔗 [https://huggingface.co/papers/2504.09566](https://huggingface.co/papers/2504.09566)
+
+---
+
+### 🗓️ **2025-04-18** | 🌟 Launch of DIY CoT Template Feature  
+> ✨ Introducing: **DIY Modules for Chain of Thought (CoT)**  
+- 🧩 Create your own **reasoning structures**  
+- 🔧 Customize templates to suit **specific tasks or domains**  
+- 🎨 Design your own logic flow to enhance LLM performance  
+👉 [Explore the DIY Module](#diy-section)
+
+---
+
 
 
 
