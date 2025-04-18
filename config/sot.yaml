@@ -1,7 +1,7 @@
 openai:
-  api_key: ''
+  api_key: ''                                     # api-key
   model_name: gpt-4o-mini
-  base_url: https://api.nuwaapi.com/v1
+  base_url: 
   max_tokens: 2048
   max_retries: 3
   temperature: 0
