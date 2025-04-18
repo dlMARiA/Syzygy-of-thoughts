@@ -127,9 +127,10 @@ The project dependencies are listed in the `requirements.txt` file. Use pip to i
 ```
 pip install -r requirement.txt
 ```
+[![My Skills](https://skillicons.dev/icons?i=windows&theme=light)](https://skillicons.dev)
 [Download requirements.txt (for windows)](https://drive.google.com/uc?export=download&id=1wft5d2EJBjA_OaPdlJZEWEMrCJBf4dDI
 )
-
+[![My Skills](https://skillicons.dev/icons?i=ubuntu&theme=light)](https://skillicons.dev)
 [Download requirements.txt (for ubuntu)](https://drive.google.com/uc?export=download&id=1kYt74cs_YP-Nt7C3C1z7E3nCaxcKXeTG)
 
 
