@@ -89,7 +89,7 @@ First, clone the project repository to your local machine. Open a terminal or co
 
 ```
 https://github.com/dlMARiA/Syzygy-of-thoughts.git
-cd Syzygy-of-thoughts
+cd Syzygy-of-thoughts-main
 ```
 ### 2.Create a Virtual Environment (Recommended)
 
