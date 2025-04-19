@@ -88,8 +88,8 @@ project
 First, clone the project repository to your local machine. Open a terminal or command prompt and execute the following command:
 
 ```
-git clone https://github.com/piotrkawa/audio-deepfake-source-tracing.git
-cd audio-deepfake-source-tracing
+https://github.com/dlMARiA/Syzygy-of-thoughts.git
+cd Syzygy-of-thoughts
 ```
 ### 2.Create a Virtual Environment (Recommended)
 
