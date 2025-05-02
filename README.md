@@ -144,7 +144,7 @@ The project uses the OpenAI API to call models. You need to configure the API ke
 openai:
   api_key: 'your-actual-api-key'               # Replace with your own OpenAI API key
   model_name: gpt-4o-mini                      # The name of the model you are using
-  base_url: https://api.nuwaapi.com/v1         # The network interface address of the model
+  base_url:                                    # The network interface address of the model
   max_tokens: 2048                             # The maximum token length of the model's answer
   max_retries: 3                               # The number of retries for network timeouts
   temperature: 0.2                             # The temperature for the model
@@ -152,8 +152,8 @@ openai:
 If the model you wish to use is not based on OpenAI's API, you can mimic the configuration format in `sot.yaml` for your model. For example, to configure for Google PaLM API:
 ```google:
   api_key: 'your-google-api-key'               # # Replace with your own Google API key
-  model_name: models/text-bison-001            # The name of the Google model you're using
-  base_url: https://generativelanguage.googleapis.com/v1beta2         # Google API base URL
+  model_name:                                  # The name of the Google model you're using
+  base_url:                                    # Google API base URL
   max_tokens: 2048                             # The maximum token length of the model's answer
   max_retries: 3                               # The number of retries for network timeouts
   temperature: 0.2                             # The temperature for the model
