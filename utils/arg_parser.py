@@ -9,6 +9,6 @@ def parse_arguments():
         object.
     """
     parser = argparse.ArgumentParser(description='Enter the prompt type you need')
-    parser.add_argument('--prompt_type', help='prompt type')
+    parser.add_argument('--prompt_type', default='sot',help='prompt type')
     args = parser.parse_args()
     return args
