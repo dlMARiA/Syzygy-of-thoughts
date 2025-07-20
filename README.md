@@ -26,6 +26,16 @@ This project is the code implementation for the paper Syzygy of Thoughts: Improv
 
 ---
 
+### 🗓️ **2025-07-15** | 🎓 ACM MM Review Score Update  
+>  **Our Paper Received Strong Reviews — But Was Rejected Due to Scope**  
+- 📊 Final Scores: **6, 6 (Marginal Accept)** and **7, 7 (Accept)**  
+- ✅ Evaluated as **technically solid and impactful**  
+- ❌ Rejected because the paper was **not aligned with ACM MM's multimedia scope**  
+🎯 *Reviewers recognized the value of our contributions, but topic mismatch led to a rejection*  
+👉 We're now preparing to submit to a venue that better fits our domain
+
+---
+
 ### 🗓️ **2025-04-18** | 🌟 Launch of DIY CoT Template Feature                                    
 >  Introducing: **DIY Modules for Chain of Thought (CoT)**  
 - 🧩 Create your own **reasoning structures**  
